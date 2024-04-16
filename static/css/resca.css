@@ -5,9 +5,23 @@
 body{
     background-color:  #FF9900;
 }
+nav{
+    float: right;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.nav{
+    display: inline;
+    display: flex;
+    list-style: none;
+    margin: 25px;
 
+
+}
+li{
+    padding: 0px 15px;
+}
 @media only screen and (max-width:1800px) {
-    
+
 }
 @media only screen and (max-width:1350px) {
 .text-title{
