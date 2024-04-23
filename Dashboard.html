@@ -27,7 +27,8 @@
 		</div>
         <nav style="width: 100%;">
             <ul class="navbar">
-                <li><a href="" target="_blank">Nosotros</a></li>
+                <li><a href="./index.html">Incio</a></li>
+                <li><a href="">Nosotros</a></li>
                 <li>Perdidos</li>
                 <li>Encontrados</li>
                 <li>Protectoras</li>
@@ -35,6 +36,7 @@
                 <li>Preguntas Frecuentes</li>
               
             </ul>
+            <button class="close menu_bar" style="width: 35px;">X</button>
         </nav>
     </header>
     <main>
@@ -62,7 +64,11 @@
         </button>
            </div> 
         </div>
+   
              </div>
+             <div style="display: flex; justify-content: center;">
+             <img src="./src/img/img-1.png" width="100%"/>
+            </div>
         </section>
         <section id="Nosotros"></section>
         <section id="Perdidos"></section>
@@ -73,31 +79,33 @@
     </main>
     <footer>
 
-        <div>
-          
+        <div class="footer">
+            <p>LOGO</p>
+            <p>CONTACTANOS</p>
+            <p>SEGUINOS</p>
         </div>
-        <span class="icon-circle-up  ir-arriba"></span>
-            <script>
-                $(document).ready(function(){
-                
-                $('.ir-arriba').click(function(){
-                    $('body, html').animate({
-                        scrollTop: '0px'
-                    }, 300);
-                });
-                
-                $(window).scroll(function(){
-                    if( $(this).scrollTop() > 0 ){
-                        $('.ir-arriba').slideDown(300);
-                    } else {
-                        $('.ir-arriba').slideUp(300);
-                    }
-                });
-                
-                });
-                
-                
-                </script>
+        <i class="fa-solid fa-arrow-up ir-arriba"></i>
+        <script>
+            $(document).ready(function(){
+            
+            $('.ir-arriba').click(function(){
+                $('body, html').animate({
+                    scrollTop: '0px'
+                }, 300);
+            });
+            
+            $(window).scroll(function(){
+                if( $(this).scrollTop() > 0 ){
+                    $('.ir-arriba').slideDown(300);
+                } else {
+                    $('.ir-arriba').slideUp(300);
+                }
+            });
+            
+            });
+            
+            
+            </script> 
     </footer>
 </body>
 </html>
