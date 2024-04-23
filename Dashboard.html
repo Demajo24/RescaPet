@@ -26,13 +26,8 @@
 			<a href="#" class="bt-menu"><i class="fa-solid fa-bars"></i></a>
 		</div>
         <nav style="width: 100%;">
-         
-       
-     
-      
             <ul class="navbar">
-          
-                <li><a href="./Dashboard.html">RescaPet</a></li>
+                <li><a href="./index.html">Incio</a></li>
                 <li><a href="">Nosotros</a></li>
                 <li>Perdidos</li>
                 <li>Encontrados</li>
@@ -46,9 +41,34 @@
     </header>
     <main>
         <section id="Dashboard">
-    
+             <div class="Ddirection">
+            <div class="col-1">
+            <p class="TextoInicio">¿Encontraste un animalito perdido?</p>
+            <p class="text-title">Contacta ayuda <br/>si no puedes socorrerlo</p>
+            <p class="text-title2">¿Cómo?</p>
+            <p class="text-title">Seguí los siguientes pasos</p>
+         </div>
+            <div class="col-2">
+           <div class="card">
 
+           <h1 class="title">Adjunta la imagen <br/>del animalito perdido</h1>
 
+           <i class="fa-solid fa-camera-retro cam"></i>
+            <button type="submit" class="button-cam">
+         
+              
+                <span class="text-button">Enviar</span>
+        
+        
+
+        </button>
+           </div> 
+        </div>
+   
+             </div>
+             <div style="display: flex; justify-content: center;">
+             <img src="./src/img/img-1.png" width="100%"/>
+            </div>
         </section>
         <section id="Nosotros"></section>
         <section id="Perdidos"></section>
@@ -64,29 +84,28 @@
             <p>CONTACTANOS</p>
             <p>SEGUINOS</p>
         </div>
-   
-       <i class="fa-solid fa-arrow-up ir-arriba"></i>
-            <script>
-                $(document).ready(function(){
-                
-                $('.ir-arriba').click(function(){
-                    $('body, html').animate({
-                        scrollTop: '0px'
-                    }, 300);
-                });
-                
-                $(window).scroll(function(){
-                    if( $(this).scrollTop() > 0 ){
-                        $('.ir-arriba').slideDown(300);
-                    } else {
-                        $('.ir-arriba').slideUp(300);
-                    }
-                });
-                
-                });
-                
-                
-                </script> 
+        <i class="fa-solid fa-arrow-up ir-arriba"></i>
+        <script>
+            $(document).ready(function(){
+            
+            $('.ir-arriba').click(function(){
+                $('body, html').animate({
+                    scrollTop: '0px'
+                }, 300);
+            });
+            
+            $(window).scroll(function(){
+                if( $(this).scrollTop() > 0 ){
+                    $('.ir-arriba').slideDown(300);
+                } else {
+                    $('.ir-arriba').slideUp(300);
+                }
+            });
+            
+            });
+            
+            
+            </script> 
     </footer>
 </body>
 </html>
