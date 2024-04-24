@@ -29,3 +29,93 @@ body{
 @media only screen and (max-width: 600px) {
     
 }
+
+
+/* Pagina protectoras */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+
+
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box ;
+    list-style: none;
+    list-style: none;
+    text-decoration: none;
+} */
+
+body{background-color:white}
+
+h1{
+    text-align: center;
+    font-size: 80px;
+    color:black;
+    width: 600px;
+    height: auto;
+    margin: 0 auto;
+    font-family: "Open Sans", sans-serif;
+    padding: 20px;
+}
+.aqui{
+    text-align: center;
+    font-size: 30px;
+    font-family: "Open Sans", sans-serif;
+    color: #669900;
+}
+
+.cardprotectoras{
+    display:flex;
+    align-items: center;
+    width: 100%;
+    height: 400px;
+    padding-top: 120px;
+   
+    
+
+}
+.container {
+    display: flex;
+    justify-content: space-around;
+    background-color: white;
+    width: 100%;
+    height:auto;
+    padding: 15px;
+
+   
+} 
+.tarjeta{
+    width: 200px;
+    height: 400px;
+    background-color: rgba(146, 202, 17, 0.856);
+    text-align: center;
+    padding: 18px;
+    border-radius: 12px;
+    box-shadow:6px 6px 12px grey; ;
+    
+    
+}
+.tarjeta img{
+    width:100% ;
+    height: 165px;
+    box-shadow: 6px 6px 12px grey;
+    object-fit: cover;
+    border-radius: 8px;
+    
+
+}
+.denominacion{
+    color: black;
+    font-family: Arial;
+    padding: 7px;
+    font-size: 20px;
+   
+}
+ p{
+    font-family:arial;
+    padding : 20px 20px;
+    text-align: center;
+}
+h1{
+    color:#ff6600;
+}
