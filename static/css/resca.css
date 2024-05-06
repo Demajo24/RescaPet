@@ -1,31 +1,453 @@
 *{
     margin: 0;
     padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
 }
+
 body{
     background-color:  #FF9900;
+    font-family: "Open Sans", sans-serif;
+}
+main,header, footer{
+    font-family: "Open Sans", sans-serif;
+}
+header{
+
+padding-bottom: 100px;
+} 
+a{
+    color:white;
+}
+a:active{
+    color:white;
 }
 
-@media only screen and (max-width:1800px) {
-    
+a:hover{
+    color:#FF9900;
 }
-@media only screen and (max-width:1350px) {
+a:active{
+    color:chartreuse;
+}
+nav{
+    
+   
+    background-color:blueviolet; 
+    padding: 50px 0px;
+    color:white;
+    justify-content:flex-end ;
+    display: flex;
+    width: 100%;
+    z-index: 3;
+}
+.navbar{
+    display: inline;
+    display: flex;
+    align-self: center;
+    list-style: none;
+    float: right;
+
+
+}
+li{
+    padding: 0px 15px;
+}
+.menu_bar {
+	display:none;
+    font-size: var(--medium);
+   
+   font-family: "Dosis", sans-serif;
+   text-decoration: none;
+   
+    list-style: none;
+}
+.close{
+    font-size: 21px;
+    font-weight: 900;
+    color: #fff;
+    height: 35px;
+    width: 35px;
+    font-family: var(--font-title);
+    padding: 3px 8px;
+    border-radius: 20px;
+    margin-right: 15px;
+    background: none;
+}
+.ir-arriba {
+    display: none;
+    padding: 10px;
+    border-radius: 100px;
+    background: #262222;
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+section{
+    padding: 25px 0px 20px;
+}
+.button-cam{
+    border-color:#fff;
+    padding: 5px 3px;
+   background: transparent;
+   width: 100px;
+   border-radius: 1em;
+   margin:auto;
+
+
+}
+
+.title{
+    margin-bottom: 50px;
+    color:white;
+    font-weight: 600;
+ 
+}
+.cam{
+    font-size: 100px;
+    color:white;
+    margin-bottom: 25px;
+}
+.text-button{
+    font-size: 16px;
+    color:white;
+    font-weight: 600;
+ 
+  
+}
 .text-title{
-    font-size: 25px;
+    font-size: 24px;
+    color:#2C6700;
+    font-weight: 900;
+    margin-bottom: 15px;
+    text-align: center;
+}
+.text-title2{
+    font-size: 42px;
     color:white;
     font-weight: 900;
+    margin-bottom: 10px;
+    text-align: center;
 }
+.col-1{
+    width: 50%;
+}
+.col-2{
+    width: 50%;
+}
+footer{
+    background-color: #2C6700;
+ 
+
+
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    font-weight: 600;
+
+    font-size: 14px;
+    padding: 50px 25px;
+
     
+}
+@media only screen and (max-width:1800px) {
+    .card {
+        width: 400px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        background-color:#2C6700;
+        overflow: hidden;
+        box-shadow: 0 15px 8px rgba(0, 0, 0, 0.1);
+        margin: 20px auto;
+        padding: 55px 25px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        display: grid;
+    }
+    .text-title{
+        font-size: 24px;
+        color:#2C6700;
+        font-weight: 900;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+    .text-title2{
+        font-size: 42px;
+        color:white;
+        font-weight: 900;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    .col-1{
+        width: 50%;
+    }
+    .col-2{
+        width: 50%;
+    }
+    .Ddirection{
+        flex-direction: row; 
+        display: flex;
+    }
+    .TextoInicio{
+        font-size: 52px;
+        color:white;
+        padding:0px 90px;
+        font-weight: 900;
+    
+        margin-bottom: 15px;
+        text-align: center;
+    }  
+}
+@media only screen and (max-width:1350px) {
+
+.card {
+    width: 400px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color:#2C6700;
+    overflow: hidden;
+    box-shadow: 0 15px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    padding: 55px 25px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+}
+.text-title{
+    font-size: 24px;
+    color:#2C6700;
+    font-weight: 900;
+    margin-bottom: 15px;
+    text-align: center;
+}
+.text-title2{
+    font-size: 42px;
+    color:white;
+    font-weight: 900;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.col-1{
+    width: 50%;
+    padding:0px 20px;
+}
+.col-2{
+    width: 50%;
+}
+.TextoInicio{
+    font-size: 42px;
+    color:white;
+    font-weight: 900;
+    padding:0px 20px;
+  
+    margin-bottom: 15px;
+    text-align: center;
+}   
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1100px) {
+    .card {
+        width: 400px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        background-color:#2C6700;
+        overflow: hidden;
+        box-shadow: 0 15px 8px rgba(0, 0, 0, 0.1);
+        margin: 20px auto;
+        padding: 55px 25px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        display: grid;
+    }   
+    .text-title{
+        font-size: 24px;
+        color:#2C6700;
+        font-weight: 900;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+    .text-title2{
+        font-size: 42px;
+        color:white;
+        font-weight: 900;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    .col-1{
+        width: 50%;
+        padding: 0px 20px;
+    }
+    .col-2{
+        width: 50%;
+    }
+    .TextoInicio{
+        font-size: 42px;
+        color:white;
+        font-weight: 900;
     
+        margin-bottom: 15px;
+        text-align: center;
+    }
 }
 
 @media only screen and (max-width: 800px) {
-    
+    .navbar {
+        text-align: left;
+        margin: 15px;
+        display: flex;
+        flex-direction: column;
+        float: left;
+        width: 100%;
+    }
+
+    .card {
+        width: 400px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        background-color:#2C6700;
+        overflow: hidden;
+        box-shadow: 0 15px 8px rgba(0, 0, 0, 0.1);
+        margin: 20px auto;
+        padding: 55px 25px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        display: grid;
+    } 
+    .menu_bar {
+		display:grid;
+		width:100%;
+		
+	}
+
+
+    .menu_bar .bt-menu {
+		display:block;
+		padding:40px;
+		background:blueviolet;
+		color:#fff;
+		text-decoration:none;
+		font-weight: bold;
+		font-size:25px;
+		-webkit-box-sizing:border-box;
+		-moz-box-sizing:border-box;
+		box-sizing:border-box;
+	}
+
+
+	.menu_bar span {
+		float:right;
+		font-size:40px;
+	}
+    .navbar{
+        text-align: left;
+        margin: 15px;
+        display: flex;
+        flex-direction: column; 
+    }
+    header nav {
+		width:80%;
+	
+		left:-100%;
+		margin:0;
+		position: fixed;
+	}
+
+	header nav ul li {
+		display:block;
+		float:none;
+	     padding: 5px;
+       
+
+        text-decoration: none;
+         margin-left: 20px;
+         list-style: none;
+        
+	}
+	.menu_bar span {
+		float:right;
+		font-size:40px;
+	}
+    .Ddirection{
+        flex-direction:column; 
+        display: flex;
+        align-items: center;
+    }
+    .text-title{
+        font-size: 24px;
+        color:#2C6700;
+        font-weight: 900;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+    .text-title2{
+        font-size: 42px;
+        color:white;
+        font-weight: 900;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    .col-1{
+        width: 100%;
+    }
+    .col-2{
+        width: 100%;
+    }
+
 }
 
+
+
+
+
+
+
 @media only screen and (max-width: 600px) {
-    
+    .card {
+        width: 300px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        background-color:#2C6700;
+        overflow: hidden;
+        box-shadow: 0 15px 8px rgba(0, 0, 0, 0.1);
+        margin: 20px auto;
+        padding: 55px 25px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        display: grid;
+    }
+    .text-title{
+        font-size: 21px;
+        color:#2C6700;
+        font-weight: 900;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    .text-title2{
+        font-size: 36px;
+        color:white;
+        font-weight: 900;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    .col-1{
+        width: 100%;
+    }
+    .col-2{
+        width: 100%;
+    }
+    .Ddirection{
+        flex-direction:column; 
+        display: flex;
+        align-items: center;
+    }
 }
