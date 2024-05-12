@@ -4,24 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../static/css/resca.css">
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/4d4e78c4c7.js" crossorigin="anonymous"></script>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+ <script src="./menu.js"></script> 
+ <title>RescaPet</title>
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
-               <li> <a href="../index.html">Inicio</a></li>
-               <li><a>Nosotros</a></li>
-               <li><a>Perdidos</a></li>
-               <li><a>Encontrados</a></li>
-               <li><a>Protectoras</a></li>
-               <li><a>Colaborá</a></li>
-               <li><a href="preguntasFre.html">Preguntas Frecuentes</a></li>
+     
+
+
+        <div class="menu_bar">
+			<a href="#" class="bt-menu"><i class="fa-solid fa-bars"></i></a>
+		</div>
+        <nav style="width: 100%;">
+            <img src="../src/img/logores2.png" width="150px" class="logoNav"/>
+            <ul class="navbar">
+                <li> <a href="../index.html">Inicio</a></li>
+                <li><a href="">Nosotros</a></li>
+                <li>Perdidos</li>
+                <li>Encontrados</li>
+                <li>Protectoras</li>
+                <li>Colaborá</li>
+                <li><a href="">Preguntas Frecuentes</a></li>
+              
             </ul>
+            <button class="close menu_bar" style="width: 35px;">X</button>
         </nav>
     </header>
     <main>
         <div class="titulo"><h1>Preguntas frecuentes sobre ayuda a animales</h1></div>
+        <br/>
             <section class="preguntas">
                 <div class="tarjeta">
                     <img class="imagen-responsive" src="../static/galeria.css/perrito.jpg" alt="Imagen perro">
@@ -99,8 +115,41 @@
                     <h2 class="titulo-responsive">¿La protectora se hace cargo de la vacunacion contra la rabia?</h2>
                     <p class="parrafo-responsive"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut sequi delectus saepe odio suscipit ratione at labore. Nemo debitis natus nostrum labore? Dignissimos odio soluta culpa, id mollitia doloremque hic?</p>
                 </div></section>
-                </section>
+            </section>
     </main>
-    <footer></footer>
+    <footer>
+
+        <div class="footer">
+
+            <p>LOGO</p>
+            <p>CONTACTANOS</p>
+            <div class="redes">
+            <p>SEGUINOS</p>
+            <i class="fa-brands fa-facebook iconXL"></i>
+            </div>
+        </div>
+        <i class="fa-solid fa-arrow-up ir-arriba"></i>
+        <script>
+            $(document).ready(function(){
+            
+            $('.ir-arriba').click(function(){
+                $('body, html').animate({
+                    scrollTop: '0px'
+                }, 300);
+            });
+            
+            $(window).scroll(function(){
+                if( $(this).scrollTop() > 0 ){
+                    $('.ir-arriba').slideDown(300);
+                } else {
+                    $('.ir-arriba').slideUp(300);
+                }
+            });
+            
+            });
+            
+            
+            </script> 
+    </footer>
 </body>
 </html>
