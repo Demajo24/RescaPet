@@ -411,7 +411,7 @@ label {
 /* API PERRITOS */
 .imagen {
     width: 200px;
-    height: 200px;
+  
     display: block;
     margin-bottom: 10px;
     border-radius: 5px;
@@ -421,9 +421,41 @@ label {
 
 #cajita {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    place-items: center; 
+     grid-template-columns: repeat(auto-fill, 200px);
     gap: 20px;
+    padding: 25px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 35px;
+    overflow: hidden;
+    
 }
+.imagen {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease; /* Transición suave para cambios de tamaño */
+  }
+
+#cajita:hover .imagen {
+    transform: rotate(5deg); /* Aumentar el tamaño de la imagen al pasar el mouse */
+    animation: brillo 1s infinite; /* Aplica la animación de brillo al pasar el mouse */
+  }
+  @keyframes brillo {
+    0% {
+      filter: brightness(100%); /* Inicio de la animación: brillo normal */
+    }
+    50% {
+      filter: brightness(130%); /* Mitad de la animación: brillo aumentado */
+    }
+    100% {
+      filter: brightness(100%); /* Fin de la animación: brillo normal */
+    }
+  }
+  
+ 
+ 
+/* .cajita { transform: rotate(5deg) scale(2,2) translate(20px, 40px); } */
 
 /*responsive*/
 @media only screen and (max-width:1800px) {
