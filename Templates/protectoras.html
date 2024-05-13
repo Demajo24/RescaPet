@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <!--Palabras claves-->
+         <meta name="Keywords" content="ayuda,rescate, mascotas, perros, adopcion, transito, animales perdidos, colaboracion, proteccion, protectoras
+         busqueda,">
+         <!--Descripcion-->
+         <meta name="description" content="Ayuda y rescate de animales">
+        <link rel="shortcut icon" href="src/img/logores2.png" type="image/x-icon" sizes="32x32"/>
+        <title>RescaPet</title>
+        <link href="../static/css/resca.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+         <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/4d4e78c4c7.js" crossorigin="anonymous"></script>
+        <script src="http://code.jquery.com/jquery-latest.js"></script>
+        
+        <script src="../static/menu.js"></script> 
+        <script src="../static/funciones.js"></script>
+    
+    </head>
+<body>
+    <header>
+        <div class="menu_bar">
+           <a href="#" class="bt-menu"><i class="fa-solid fa-bars"></i></a>
+       </div> 
+       <nav class="navdirection">
+           <div class="">
+           <img src="../src/img/logores2.png" width="150px" class="logoNav"/>
+           <button class="close menu_bar buttonNav" style="width: 35px;">X</button>
+          </div>
+           <ul class="navbar">
+               <li><a href="../index.html">Inicio</a></li>
+               <li><a href="">Nosotros</a></li>
+               <li>Perdidos</li>
+               <!-- <li>Encontrados</li> -->
+               <li>Protectoras</li>
+               <!-- <li>Colaborá</li> -->
+               <li><a href="preguntasFre.html">Preguntas Frecuentes</a></li>
+               <li><a href="login.html"><i class="fa-solid fa-user iconL"></i></a></li>
+             
+           </ul>
+          
+       </nav>
+   </header>
+    <main>
+        <div class="titulos">
+            <h1>Protectoras</h1>
+            <h3 class="aqui">Aquì podes ayudar!</h3>
+        </div>
+        
+        <section class="cardprotectoras"> 
+          
+                    
+                <div class="tarjeta"><h2 class="denominacion">Proyecto 4 patas</h2><picture><a href="https://proyecto4patas.org/participa/" target="_blank"><img src="./imagenes/4patas.jpg" alt="imagen a protectora" ></a></picture><p>Hace clic en la imagen para ir a la web y poder colaborar</p>
+                </div>
+                <div class="tarjeta"><h2 class="denominacion">Adopteros</h2><picture><a href="https://www.adopterosargentina.com/" target="_blank"><img src="./imagenes/adopteros.jpg" alt="imagen a protectora" ></a></picture><p>Hace clic en la imagen para ir a la web y poder colaborar.</p>
+                </div>
+                <div class="tarjeta"><h2 class="denominacion">Hogar corazòn animal</h2><picture><a href="https://www.hogar-corazonanimal.com/" target="_blank"><img src="./imagenes/corazonanimal.jpg" alt="imagen a protectora"></a></picture><p>Hace clic en la imagen para ir a la web y poder colaborar</p>
+                </div>
+                <div class="tarjeta"><h2 class="denominacion">El campito refugio</h2><picture><a href="https://www.elcampitorefugio.org/" target="_blank"><img src="./imagenes/elcampito.jpg" alt="imagen a protectora"></a></picture><p>Hace clic en la imagen para ir a la web y poder colaborar</p>
+                </div>
+                <div class="tarjeta"><h2 class="denominacion">Aprani</h2><picture><a href="https://aprani.org/" target="_blank"><img src="./imagenes/aprani.jpg"alt="imagen a protectora" ></a></picture><p>Hace clic en la imagen para ir a la web y poder colaborar</p>
+                </div>
+            
+        </section>
+    </main>
+    <footer>
+
+        <div class="footer">
+
+            <p>LOGO</p>
+            <p>CONTACTANOS</p>
+            <div class="redes">
+            <p>SEGUINOS</p>
+            <i class="fa-brands fa-facebook iconXL"></i>
+            </div>
+        </div>
+        <i class="fa-solid fa-arrow-up ir-arriba"></i>
+        <script>
+            $(document).ready(function(){
+            
+            $('.ir-arriba').click(function(){
+                $('body, html').animate({
+                    scrollTop: '0px'
+                }, 300);
+            });
+            
+            $(window).scroll(function(){
+                if( $(this).scrollTop() > 0 ){
+                    $('.ir-arriba').slideDown(300);
+                } else {
+                    $('.ir-arriba').slideUp(300);
+                }
+            });
+            
+            });
+            
+            
+            </script> 
+          
+    </footer>
+</body>
+</html>

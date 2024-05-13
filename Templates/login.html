@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!--Palabras claves-->
+     <meta name="Keywords" content="ayuda,rescate, mascotas, perros, adopcion, transito, animales perdidos, colaboracion, proteccion, protectoras
+     busqueda,">
+     <!--Descripcion-->
+     <meta name="description" content="Ayuda y rescate de animales">
+    <link rel="shortcut icon" href="" type="image/x-icon" sizes="32x32"/>
+    <title>Login</title>
+    <link href="../static/css/resca.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/4d4e78c4c7.js" crossorigin="anonymous"></script>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+ <script src="../static/menu.js"></script> 
+ <script src="../static/funciones.js"></script>
+</head>
+<body>
+
+   <header>
+    <div class="menu_bar">
+        <a href="#" class="bt-menu"><i class="fa-solid fa-bars"></i></a>
+    </div>
+    <nav class="navdirection">
+        <div class="">
+            <img src="../src/img/logores2.png" width="150px" class="logoNav"/>
+            <button class="close menu_bar buttonNav" style="width: 35px;">X</button>
+           </div>
+        <ul class="navbar">
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="">Nosotros</a></li>
+            <li>Perdidos</li>
+            <!-- <li>Encontrados</li> -->
+            <li>Protectoras</li>
+            <!-- <li>Colaborá</li> -->
+            <li><a href="../Templates/preguntasFre.html">Preguntas Frecuentes</a></li>
+            <li><a href=""><i class="fa-solid fa-user iconL"></i></a></li>
+          
+        </ul>
+     
+    </nav>
+   </header>
+
+
+   <main>
+    <div class="formu-usuario">
+   
+        <h2 id="mensaje-bienvenida"></h2>
+        <h1>Inicio de Sesión</h1>
+     
+        <div class="registro">
+        <form action="" method="post">
+            <div>
+             <label for="nombre">Usuario:</label>
+             <br>
+             <input type="text" name="nombre" id="nombre">
+             <br>
+            <div> 
+             <label for="contraseña">Ingresa tu contraseña:</label>
+             <br>
+             <input type="password" name="contraseña" id="contraseña" required>
+            </div> 
+            <br/>
+            <button id="boton-guardar" class="button-cam"><a href="/index.html"> <span class="text-button">Ingresa</span></a></button>
+        </form>
+   
+        <br>
+         <div>
+        <p class="boton-ingreso"><span class="text-title4">¿No estás registrado?</span></p>
+
+          <button class="button-cam"><a href="../Templates/registro.html" id="login-ingreso">Ingresa acá</a></button>
+        </p>
+          </div>     </div>
+    </div>
+    <div style="display: flex; justify-content: center;margin-top: 35px;">
+        <img src="../src/img/img-1.png"  class="imgWidth"/>
+       </div>
+   </main> 
+
+   <footer>
+
+    <div class="footer">
+
+        <p>LOGO</p>
+        <p>CONTACTANOS</p>
+        <div class="redes">
+        <p>SEGUINOS</p>
+        <i class="fa-brands fa-facebook iconXL"></i>
+        </div>
+    </div>
+    <i class="fa-solid fa-arrow-up ir-arriba"></i>
+    <script>
+        $(document).ready(function(){
+        
+        $('.ir-arriba').click(function(){
+            $('body, html').animate({
+                scrollTop: '0px'
+            }, 300);
+        });
+        
+        $(window).scroll(function(){
+            if( $(this).scrollTop() > 0 ){
+                $('.ir-arriba').slideDown(300);
+            } else {
+                $('.ir-arriba').slideUp(300);
+            }
+        });
+        
+        });
+        
+        
+        </script> 
+      
+</footer>
+
+   <script src="../static/localStorage.js"></script>
+</body>
+</html>

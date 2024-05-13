@@ -24,22 +24,26 @@
 </head>
 <body>
     <header>
-        <div class="menu_bar">
+         <div class="menu_bar">
 			<a href="#" class="bt-menu"><i class="fa-solid fa-bars"></i></a>
-		</div>
-        <nav style="width: 100%;">
+		</div> 
+        <nav class="navdirection">
+            <div class="">
             <img src="src/img/logores2.png" width="150px" class="logoNav"/>
+            <button class="close menu_bar buttonNav" style="width: 35px;">X</button>
+           </div>
             <ul class="navbar">
                 <li><a href="">Inicio</a></li>
                 <li><a href="">Nosotros</a></li>
                 <li>Perdidos</li>
-                <li>Encontrados</li>
-                <li>Protectoras</li>
-                <li>Colaborá</li>
+                <!-- <li>Encontrados</li> -->
+                <li><a href="./Templates/protectoras.html">Protectoras</a></li>
+                <!-- <li>Colaborá</li> -->
                 <li><a href="./Templates/preguntasFre.html">Preguntas Frecuentes</a></li>
+                <li><a href="./Templates/login.html"><i class="fa-solid fa-user iconL"></i></a></li>
               
             </ul>
-            <button class="close menu_bar" style="width: 35px;">X</button>
+           
         </nav>
     </header>
     <main>
@@ -54,7 +58,7 @@
             <div class="col-2">
            <div class="card">
 
-           <h1 class="title">Adjunta la imagen <br/>del animalito perdido</h1>
+           <p class="text-title3">Adjunta la imagen <br/>del animalito perdido</p>
           <div class="InfoCam">
            <i class="fa-solid fa-camera-retro cam"></i>
            <button type="submit" class="button-cam">

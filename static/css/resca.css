@@ -14,7 +14,7 @@ main,header, footer{
 }
 header{
 
-padding-bottom: 100px;
+padding-bottom: 50px;
 } 
 a{
     color:white;
@@ -62,12 +62,7 @@ li{
    
     list-style: none;
 }
-.logoNav{
-    width: 100px;
-    height: auto;
-    margin: 15px;
-    float: left;
-}
+
 .close{
     font-size: 21px;
     font-weight: 900;
@@ -103,7 +98,7 @@ li{
 }
 .iconL{
     font-size: 18px;
-    margin:8px;
+    margin:0px;
 }
 .iconXL{
     font-size: 21px;
@@ -140,7 +135,7 @@ section{
     display: flex; flex-direction: row; gap:15px;align-items: center;
 }
 .text-button{
-    font-size: 16px;
+    font-size: 14px;
     color:white;
     font-weight: 600;
  
@@ -160,6 +155,20 @@ section{
     margin-bottom: 10px;
     text-align: center;
 }
+.text-title3{
+    font-size: 24px;
+    color:white;
+    font-weight: 900;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.text-title4{
+    font-size: 18px;
+    color:white;
+    font-weight: 700;
+    margin-bottom: 10px;
+    text-align: center;
+}
 .col-1{
     width: 50%;
 }
@@ -168,21 +177,11 @@ section{
 }
 footer{
     background-color: #2C6700;
-    padding: 15px 100px;
+
 
 
 }
-.footer{
-    display: flex;
-    justify-content: space-between;
-    color: white;
-    font-weight: 600;
 
-    font-size: 21px;
-    padding: 50px 25px;
-
-    
-}
 .redes{
     display: flex;
     flex-direction: column;
@@ -299,11 +298,146 @@ footer{
   .Form input[type="submit"]:hover {
     background-color: #45a049;
   } */
+/* protectoras*/
+
+.aqui{
+    text-align: center;
+    font-size: 30px;
+    font-family: "Open Sans", sans-serif;
+    /* color: #669900; */
+    color:#3f5c05
+}
 
 
+.tarjeta{
+    width: 200px;
+    height: 400px;
+
+    background-color: rgba(146, 202, 17, 0.856);
+    text-align: center;
+    padding: 18px;
+    border-radius: 12px;
+    box-shadow:6px 6px 16px rgb(20, 19, 19); ;
+    
+    
+}
+.tarjeta img{
+    width:100% ;
+    height: 165px;
+    box-shadow: 6px 6px 8px rgba(49, 48, 48, 0.774);
+    object-fit: cover;
+    border-radius: 8px;
+    
+
+}
+.denominacion{
+    color: white;
+    font-family: Arial;
+    padding: 7px;
+    font-size: 20px;
+   
+}
+ p{
+    font-family:arial;
+    padding : 20px 20px;
+    text-align: center;
+}
+h1{
+    color:white;
+}
+.container2 {
+    display: flex;
+    justify-content: space-around;
+    background-color:#ff6600;
+    width: 100%;
+    height:auto;
+    padding: 15px;
+
+   
+} 
+/* REGISTRO */
+.formu-usuario {
+    margin: 0px 0px 85px;
+    padding: 0px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+
+ 
+
+}
+
+h3{
+    text-align: start;
+    display: block;
+    text-decoration: underline;
+}
+
+ 
+
+label {
+    display: block;
+   
+    color:#fff;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+
+
+
+/* LOGIN */
+.login{
+    background-color: white;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.nombre-usuario{
+    display: block;
+    margin-bottom: 10px;
+}
+.boton-ingreso{
+    font-size: 16px;
+    font-weight: 600;
+    color:#fff;
+    text-decoration: none;
+}
+ a{
+    text-decoration: none;
+ }
+
+/* API PERRITOS */
+.imagen {
+    width: 200px;
+    height: 200px;
+    display: block;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 15px;
+    padding: 15px;
+}
+
+#cajita {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
 
 /*responsive*/
 @media only screen and (max-width:1800px) {
+    .navdirection{
+        width: 100%;
+        flex-direction: row;
+        display: flex;
+    }
+    .logoNav{
+        width: 100px;
+    
+        margin: 15px;
+        float: left;
+    }
     .card {
         width: 450px;
         border: 6px solid #ccc;
@@ -370,6 +504,7 @@ footer{
         height:450px;
         text-align: center;
         margin-bottom: 10px;
+        color:#fff;
     }
     .modal{ 
         display:none;
@@ -387,6 +522,59 @@ footer{
     
         z-index:1000;
       }
+      .registro {
+        width: 400px;
+         height: 400px;
+         flex-direction: column;
+         display: flex;
+          
+         border: 6px solid #ccc;
+         border-radius: 8px;
+         background-color:#2C6700;
+         overflow: hidden;
+         box-shadow: 0 15px 8px rgba(0, 0, 0, 0.1);
+         margin: 25px auto;
+         padding: 15px 25px;
+         text-align: center;
+   
+         align-items: center;
+      
+ }
+ h1{
+    text-align: center;
+    font-size: 36px;
+    margin: 0 auto;
+    font-family: "Open Sans", sans-serif;
+   
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    font-weight: 600;
+
+    font-size: 21px;
+    padding: 50px 25px;
+
+    
+}
+.imgWidth{
+    width: 50%;
+}
+.cardprotectoras{
+    display:flex;
+    align-items: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    padding-top: 120px;
+    flex-wrap: wrap;
+    gap: 1em;
+   
+    
+
+}
 }
 @media only screen and (max-width:1350px) {
 
@@ -522,6 +710,12 @@ footer{
     }
 }
 @media screen and (max-width: 1024px){
+    .logoNav{
+        width: 80px;
+      
+        margin: 15px;
+        float: left;
+    }
     .preguntas{
         display: flex;
         justify-content:space-around;
@@ -549,9 +743,14 @@ footer{
         text-align: left;
         margin: 15px;
         display: flex;
-        flex-direction: column;
+       
         float: left;
         width: 100%;
+    }
+    .navdirection{
+        width: 100%;
+        flex-direction: column;
+        display: flex;
     }
 
     .card {
@@ -666,6 +865,23 @@ footer{
         height:450px;
         text-align: center;
         margin-bottom: 10px;
+        color:#fff;
+    }
+    .TextoInicio{
+        font-size: 32px;
+        color:white;
+       
+        font-weight: 900;
+    
+        margin-bottom: 15px;
+        text-align: center;
+    }
+    .buttonNav{
+        float: right;
+        margin-top: 30px;
+    } 
+    .imgWidth{
+        width: 80%;
     }
 
 }
@@ -677,6 +893,12 @@ footer{
 
 
 @media only screen and (max-width: 600px) {
+    .logoNav{
+        width: 50px;
+  
+        margin: 15px;
+        float: left;
+    }
     .card {
         width: 350px;
         border: 6px solid #ccc;
@@ -752,6 +974,52 @@ footer{
      .textArea{
         width: 250px;
      }
+     .registro {
+        width: 300px;
+         height: 500px;
+         flex-direction: column;
+         display: flex;
+        
+         border: 6px solid #ccc;
+         border-radius: 8px;
+         background-color:#2C6700;
+         overflow: hidden;
+         box-shadow: 0 15px 8px rgba(0, 0, 0, 0.1);
+         margin: 25px auto;
+         padding: 45px 25px;
+         text-align: center;
+       
+         align-items: center;
+      
+ }
+ h1{
+    text-align: center;
+    font-size: 28px;
+   margin: 0 auto;
+    font-family: "Open Sans", sans-serif;
+   
+}
+.footer {
+    display: flex;
+    justify-content:center;
+    color: white;
+    flex-direction:column;
+    font-weight: 600;
+    text-align: center;
+    font-size: 21px;
+    /* padding: 50px 25px; */
+}
+.cardprotectoras{
+    display:flex;
+    align-items: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 120px;
+   
+    
+
+}
 }
 
 .imagen-responsive{
@@ -784,6 +1052,7 @@ footer{
     align-items: center;
     flex-wrap: wrap;
 }
+
 @media screen and (max-width: 320px){
     .preguntas{
         display: flex;
@@ -852,6 +1121,31 @@ footer{
         overflow: scroll;
         text-align: center;
         margin-bottom: 10px;
+    }
+    .card {
+        width: 300px;
+        border: 6px solid #ccc;
+        border-radius: 8px;
+        background-color:#2C6700;
+        overflow: hidden;
+        box-shadow: 0 15px 8px rgba(0, 0, 0, 0.1);
+        margin: 20px auto;
+        padding: 55px 25px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        display: grid;
+    }
+    .text-title3{
+        font-size: 16px;
+        color:white;
+        font-weight: 900;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    .buttonNav{
+        float: right;
+        margin-top: 10px;
     }
 }
 
