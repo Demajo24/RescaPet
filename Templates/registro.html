@@ -53,8 +53,8 @@
             <!-- <h2 id="mensaje-bienvenida"></h2> -->
             <h1>Registrate</h1>
             <br>
-            <div class="registro">
-            <form action="" method="get">
+            <div class="registro2">
+            <form action="" onsubmit="return validarDatos()">
                <div> 
                 <label for="mail">Ingresa un mail:</label>
                 <input type="email" name="mail" id="mail" required>
@@ -70,9 +70,23 @@
                 <input type="password" name="contraseña" id="contraseña" required>
                </div>  
                <br>
+               <div class="preferencias"> 
+                <p>Selecciona tu preferencia</p>
+                <div class="dropdown-wrapper">
+                <select name="preferencias" id="preferencias" class="dropdown"m required>
+       
+              <option value="gatito">gatos</option>
+              <option value="perrito">perros</option>
+              <option value="aves">aves</option>
+              <option value="reptiles">reptiles</option>
+               <option value="anfibios">anfibios</option>
+
+             </select></div>
+            
+            </div>
                <button class="button-cam"><a href="/index.html" id="boton-guardar">Guardar</a></button>
             </form>
-         
+             
             <div style="flex-direction: row; display: flex;">
             <p class="boton-ingreso"><span class="text-title4">¿Ya tenés una cuenta? </span></p>
             <button class="button-cam"><a href="login.html" id="login-ingreso"><u>Ingresa acá</u></a></button>
@@ -125,7 +139,7 @@
             </script> 
           
     </footer>
-
-    <script src="../static/js/localStorage.js"></script>
+    <script src="../static/validacionregistro.js"></script>
+    <script src="../static/localStorage.js"></script>
 </body>
 </html>

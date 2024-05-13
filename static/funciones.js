@@ -30,9 +30,6 @@ document.addEventListener('DOMContentLoaded', function() {
     btnCerrar.onclick = cerrarModal;
 });
 
- function mensaje(){
-   alert("Sus datos fueron enviados, gracias!");
-}
 
 
 
