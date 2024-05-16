@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <!--Palabras claves-->
+         <meta name="Keywords" content="ayuda,rescate, mascotas, perros, adopcion, transito, animales perdidos, colaboracion, proteccion, protectoras
+         busqueda,">
+         <!--Descripcion-->
+         <meta name="description" content="Ayuda y rescate de animales">
+        <link rel="shortcut icon" href="../src/img/logores2.png" type="image/x-icon" sizes="32x32"/>
+        <title>RescaPet</title>
+        <link href="../static/css/resca.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+         <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/4d4e78c4c7.js" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-latest.js"></script>
+        
+        <script src="../static/menu.js"></script> 
+        <script src="../static/funciones.js"></script>
+    <title>Nosotros</title>
+</head>
+<body>
+    <header>
+     
+
+
+        <div class="menu_bar">
+			<a href="#" class="bt-menu"><i class="fa-solid fa-bars"></i></a>
+		</div>
+        <nav class="navdirection">
+            <div class="">
+                <img src="../src/img/logores2.png" width="150px" class="logoNav"/>
+                <button class="close menu_bar buttonNav" style="width: 35px;">X</button>
+               </div>
+            <ul class="navbar">
+                <li> <a href="../index.html">Inicio</a></li>
+                <li><a href="">Nosotros</a></li>
+                 <li><a href="adopcion.html">Adopcion</a></li>
+                <li> <a href="">Perdidos</a></li>
+              
+                <li><a href="protectoras.html">Protectoras</a></li>
+                <!-- <li>Colaborá</li> -->
+                <li><a href="preguntasFre.html">Preguntas</a></li>
+                <li><a href="conctactanos.html">Contacto</a></li>
+                <li><a href="login.html"><i class="fa-solid fa-user iconL"></i></a></li>
+              
+            </ul>
+        
+        </nav>
+    </header>
+
+
+    <main>
+    <section class="seccion-nosotros">
+    <div>
+        <div class="items-title">
+            <span>Nuestra misión</span>
+        </div> 
+        <div class="items">
+            <p class="p-grid">Que la comunidad nos ayude a ayudar a los animalitos callejeros que mas nos necesecitan, o bien, a aquellos que se perdieron y solos no encuentran el camino de nuevo a su hogar.
+            Podes compartir con nosotros info sobre perritos y gatitos perdidos para ponerlos en una red de adopcion o encontrar a su dueño. Sumamos nuestro compromiso y estamos dispuestos a colaborar para que los peluditos tengan una familia que los cuide y ame. Siempre manteniendo la responsabilidad de cada adopción.</p>
+        </div>
+    </div>
+    <div>
+    <div class="items-title">
+            <span>Nuestra historia</span>
+            </div>
+        <div class="items">
+            <p class="p-grid">Este proyecto fue iniciado por un grupo de estudiantes de codo a codo. Al momento de desarrollar nuestro trabajo buscamos que sea algo significativo y de valor tanto para la comunidad como para los animales que tambien forma parte de ella. Este proyrcto recien esta iniciando, pero esperamos que tenga el alcance suficiente para cambiar vidas.</p>
+        </div>
+    </div>
+    <div>
+        <div class="items-title">
+            <span>Nuestra motivación<span>
+        </div>       
+        <div class="items">
+            <p class="p-grid">Nuestra mayor motivacion siempre serán ellos ♥. Nunca miremos hacia un costado, podemos cambiarles la vida, y ellos a nosotros</p> 
+        </div>
+    </div>
+</section>
+</main>
+
+<footer>
+
+    <div class="footer">
+
+        <img src="../src/img/logores2.png" width="80px" height="100%" style="margin-top: 25px;"/>
+        <div>
+            <p><a href="conctactanos.html">CONTACTANOS</a></p>
+        <p>info@rescapet.com</p>
+        </div>
+        <div class="redes">
+        <p>SEGUINOS</p>
+        <i class="fa-brands fa-facebook iconXL"></i>
+        </div>
+    </div>
+    <i class="fa-solid fa-arrow-up ir-arriba"></i>
+    <script>
+        $(document).ready(function(){
+        
+        $('.ir-arriba').click(function(){
+            $('body, html').animate({
+                scrollTop: '0px'
+            }, 300);
+        });
+        
+        $(window).scroll(function(){
+            if( $(this).scrollTop() > 0 ){
+                $('.ir-arriba').slideDown(300);
+            } else {
+                $('.ir-arriba').slideUp(300);
+            }
+        });
+        
+        });
+        
+        
+   </script> 
+      
+</footer>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</body>
+</html>

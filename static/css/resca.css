@@ -4,16 +4,18 @@
     text-decoration: none;
     box-sizing: border-box;
 }
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
 
 body{
     background-color:  #FF9900;
-    font-family: "Open Sans", sans-serif;
+   
+    font-family: "Dosis","Roboto" sans-serif;
 }
 main,header, footer{
-    font-family: "Open Sans", sans-serif;
+    font-family: "Dosis", sans-serif;
 }
 header{
-
+    font-family: "Dosis", sans-serif;
 padding-bottom: 50px;
 } 
 a{
@@ -30,7 +32,7 @@ a:active{
     color:chartreuse;
 }
 nav{
-    
+    font-family: "Dosis", sans-serif;
    
     background-color:blueviolet; 
     padding: 0px;
@@ -53,8 +55,10 @@ nav{
 
 
 }
+
 li{
     padding: 0px 15px;
+    font-family: "Dosis", sans-serif;
 }
 .menu_bar {
 	display:none;
@@ -72,7 +76,7 @@ li{
     color: #fff;
     height: 35px;
     width: 35px;
-    font-family: var(--font-title);
+    font-family: "Dosis", sans-serif;
     padding: 3px 8px;
     border-radius: 20px;
     margin-right: 15px;
@@ -122,11 +126,21 @@ section{
 
 
 }
+.button-env{
+    border-color:#fff;
+    padding: 10px 3px;
+   background: transparent;
+   width: 100px;
+   border-radius: 1em;
+   margin:auto;
 
+
+}
 .title{
     margin-bottom: 50px;
     color:white;
     font-weight: 600;
+    font-family: "Dosis", sans-serif;
  
 }
 .cam{
@@ -138,6 +152,7 @@ section{
     display: flex; flex-direction: row; gap:15px;align-items: center;
 }
 .text-button{
+    font-family: "Dosis", sans-serif;
     font-size: 14px;
     color:white;
     font-weight: 600;
@@ -150,6 +165,7 @@ section{
     font-weight: 900;
     margin-bottom: 15px;
     text-align: center;
+    font-family: "Dosis", sans-serif;
 }
 .text-title2{
     font-size: 42px;
@@ -157,6 +173,7 @@ section{
     font-weight: 900;
     margin-bottom: 10px;
     text-align: center;
+    font-family: "Dosis", sans-serif;
 }
 .text-title3{
     font-size: 24px;
@@ -164,6 +181,7 @@ section{
     font-weight: 900;
     margin-bottom: 10px;
     text-align: center;
+    font-family: "Dosis", sans-serif;
 }
 .text-title4{
     font-size: 18px;
@@ -171,6 +189,26 @@ section{
     font-weight: 700;
     margin-bottom: 10px;
     text-align: center;
+    font-family: "Dosis", sans-serif;
+}
+.text-title5{
+    font-size: 16px;
+    color:white;
+    font-weight: 600;
+    padding: 5px 0px;
+    margin-right: 5px;
+    text-align: left;
+    font-family: "Dosis", sans-serif;
+ 
+}
+.text-title6{
+    font-size: 16px;
+    color:white;
+    font-weight: 600;
+    padding: 5px 0px;
+    font-family: "Dosis", sans-serif;
+    text-align: center;
+ 
 }
 .col-1{
     width: 50%;
@@ -181,7 +219,7 @@ section{
 footer{
     background-color: #2C6700;
 
-
+    font-family: "Dosis", sans-serif;
 
 }
 
@@ -192,7 +230,8 @@ footer{
 }
 
 .linkMas{
-    font-family: var(--font-title);
+
+    
     font-size: var(--mediumx);
     font-weight: bold;
     padding-right: 25px;
@@ -214,6 +253,7 @@ footer{
     height:100%;
     width: 100%;
     transition: transform 300ms;
+    font-family: "Dosis", sans-serif;
     z-index:8;
   }
  
@@ -233,11 +273,13 @@ footer{
     margin: 10px;
     width: 300px;
     border-radius: 8px;
+    font-family: "Dosis", sans-serif;
 }
 .container {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: "Dosis", sans-serif;
  
   }
 
@@ -246,6 +288,7 @@ footer{
     height: 410px;
     margin-top: 5px;
     padding: 10px;
+    font-family: "Dosis", sans-serif;
  
 
     
@@ -257,14 +300,23 @@ footer{
     color:#ccc;
     font-weight: 700;
     font-size: 14px;
+    font-family: "Dosis", sans-serif;
   }
-   input{
+   .input{
     padding: 10px 15px;
     width: 300px;
     border-radius: 8px;
     margin: auto;
+    font-family: "Dosis", sans-serif;
 
  }
+ .checkbox{
+    margin-left:5px;
+    padding: 0px!important;
+
+
+ }
+
  .textArea{
     width: 300px;
  }
@@ -274,39 +326,13 @@ footer{
     border-radius: 8px;
     margin:5px 10px 15px 0px;
  }
-  /* .Form input[type="text"],
-  .Form input[type="email"],
-  .Form textarea {
-    width: 100%;
-    padding: 8px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-  }
-
-  .Form textarea {
-    resize: vertical; }/* Permite al usuario redimensionar verticalmente el campo de texto */
-  /*
-
-  .Form input[type="submit"] {
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px 15px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-
-  .Form input[type="submit"]:hover {
-    background-color: #45a049;
-  } */
+  
 /* protectoras*/
 
 .aqui{
     text-align: center;
     font-size: 30px;
-    font-family: "Open Sans", sans-serif;
+    font-family: "Dosis", sans-serif;
     /* color: #669900; */
     color:#3f5c05
 }
@@ -315,7 +341,7 @@ footer{
 .tarjeta{
     width: 200px;
     height: 400px;
-
+    font-family: "Dosis", sans-serif;
     background-color: rgba(146, 202, 17, 0.856);
     text-align: center;
     padding: 18px;
@@ -335,23 +361,25 @@ footer{
 }
 .denominacion{
     color: white;
-    font-family: Arial;
+    font-family: "Dosis", sans-serif;
     padding: 7px;
     font-size: 20px;
    
 }
  p{
-    font-family:arial;
+    font-family: "Dosis", sans-serif;
     padding : 20px 20px;
     text-align: center;
 }
 h1{
     color:white;
+    font-family: "Dosis", sans-serif;
 }
 .container2 {
     display: flex;
     justify-content: space-around;
     background-color:#ff6600;
+    font-family: "Dosis", sans-serif;
     width: 100%;
     height:auto;
     padding: 15px;
@@ -365,6 +393,7 @@ h1{
     display: flex;
     flex-direction: row;
     padding: 8px 5px;
+    font-family: "Dosis", sans-serif;
     gap:0.5em;
 }
 
@@ -372,7 +401,7 @@ h1{
 .dropdown {
     background-color:#2C6700;
     border: 1px solid #ccc;
-   
+    font-family: "Dosis", sans-serif;
     color:#fff;
     border-radius: 8px;
     padding: 5px;
@@ -416,13 +445,14 @@ h3{
     text-align: start;
     display: block;
     text-decoration: underline;
+    font-family: "Dosis", sans-serif;
 }
 
  
 
 label {
     display: block;
-   
+    font-family: "Dosis", sans-serif;
     color:#fff;
     font-size: 14px;
     font-weight: 600;
@@ -437,6 +467,7 @@ label {
     padding: 20px;
     border-radius: 15px;
     text-align: center;
+    font-family: "Dosis", sans-serif;
 }
 
 .nombre-usuario{
@@ -452,6 +483,13 @@ label {
  a{
     text-decoration: none;
  }
+
+ /* .column {
+    background-color: lightgray;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #ccc;
+} */
 
 /* API PERRITOS */
 .imagen {
@@ -498,10 +536,47 @@ label {
     }
   }
   
- 
+  #cajita2 {
+    display: grid;
+    place-items: center; 
+     grid-template-columns: repeat(auto-fill, 200px);
+    gap: 20px;
+    padding: 25px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 35px;
+    overflow: hidden;
+    
+}
+
+#cajita2:hover .imagen {
+   
+    animation: brillo 1s infinite; /* Aplica la animación de brillo al pasar el mouse */
+  }
+  @keyframes brillo {
+    0% {
+      filter: brightness(100%); /* Inicio de la animación: brillo normal */
+    }
+    50% {
+      filter: brightness(130%); /* Mitad de la animación: brillo aumentado */
+    }
+    100% {
+      filter: brightness(100%); /* Fin de la animación: brillo normal */
+    }
+  }
+  
  
 /* .cajita { transform: rotate(5deg) scale(2,2) translate(20px, 40px); } */
 
+
+/*nosotros*/
+
+.p-grid{
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: "Dosis", sans-serif;
+}
 /*responsive*/
 @media only screen and (max-width:1800px) {
     .navdirection{
@@ -528,20 +603,23 @@ label {
         justify-content: center;
         align-items: center;
         display: grid;
+        font-family: "Dosis", sans-serif;
     }
     .text-title{
-        font-size: 24px;
+        font-size: 38px;
         color:#2C6700;
         font-weight: 900;
-        margin-bottom: 15px;
+        line-height: normal;
         text-align: center;
+        font-family: "Dosis", sans-serif;
     }
     .text-title2{
         font-size: 42px;
         color:white;
         font-weight: 900;
-        margin-bottom: 10px;
+        line-height: normal;
         text-align: center;
+        font-family: "Dosis", sans-serif;
     }
     .col-1{
         width: 50%;
@@ -556,10 +634,10 @@ label {
     .TextoInicio{
         font-size: 52px;
         color:white;
-       
+        font-family: "Dosis", sans-serif;
         font-weight: 900;
-    
-        margin-bottom: 15px;
+        margin: 0px 100px;
+        line-height: normal;
         text-align: center;
     }  
     .preguntas{
@@ -596,7 +674,7 @@ label {
         margin-top: 5px;
         width: 400px;
         height:490px;
-    
+        font-family: "Dosis", sans-serif;
         z-index:1000;
       }
       .registro {
@@ -604,7 +682,7 @@ label {
          height: 400px;
          flex-direction: column;
          display: flex;
-          
+         font-family: "Dosis", sans-serif;
          border: 6px solid #ccc;
          border-radius: 8px;
          background-color:#2C6700;
@@ -622,7 +700,7 @@ label {
      height: 500px;
      flex-direction: column;
      display: flex;
-      
+     font-family: "Dosis", sans-serif;
      border: 6px solid #ccc;
      border-radius: 8px;
      background-color:#2C6700;
@@ -639,7 +717,8 @@ label {
     text-align: center;
     font-size: 36px;
     margin: 0 auto;
-    font-family: "Open Sans", sans-serif;
+    font-family: "Dosis", sans-serif;
+   
    
 }
 .footer{
@@ -647,9 +726,9 @@ label {
     justify-content: space-between;
     color: white;
     font-weight: 600;
-
+    font-family: "Dosis", sans-serif;
     font-size: 21px;
-    padding: 50px 25px;
+    padding:25px;
 
     
 }
@@ -666,9 +745,81 @@ label {
     padding-top: 120px;
     flex-wrap: wrap;
     gap: 1em;
+    font-family: "Dosis", sans-serif;
    
     
 
+}
+.registro3 {
+    width: 500px;
+     height: 700px;
+     flex-direction: column;
+     display: flex;
+     font-family: "Dosis", sans-serif;
+     border: 6px solid #ccc;
+     border-radius: 8px;
+     background-color:#2C6700;
+     overflow: hidden;
+     box-shadow: 0 15px 8px rgba(0, 0, 0, 0.1);
+   
+     padding: 15px 25px;
+     text-align: center;
+
+     align-items: center;
+  
+}
+.Contact{
+    display: flex;
+    flex-direction: row;
+   
+    margin: 35px 0px 130px;
+  
+    justify-content:space-around;
+   
+ }
+ .imag-Contact{
+    width:550px;
+    height:"auto";
+    border: 6px solid #ccc;
+ }
+ ul{
+    text-align: left;
+    display: inline-flex;
+    list-style: none;
+   
+    font-family: "Dosis", sans-serif;
+ }
+ .seccion-nosotros{
+    display:flex;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+}
+.items{
+    background-color: #891094;
+    width: 300px;
+    height: 400px;
+     padding: 10px;
+     margin: 10px;
+    border: 5px solid #3f5c05;
+    border-radius: 8px;
+    text-align: center;
+    
+    font-family: "Dosis", sans-serif;
+   
+}
+.items-title{
+    background-color: #3f5c05;
+    width: 300px;
+    height: 50px;
+    border-radius: 8px;
+    margin: 10px;
+    border: 5px solid #3f5c05;
+    text-align: center;
+    font-size: 28px;
+    color: #fff;
+    font-weight: bold;
+    font-family: "Dosis", sans-serif;
 }
 }
 @media only screen and (max-width:1350px) {
@@ -688,17 +839,19 @@ label {
     display: grid;
 }
 .text-title{
-    font-size: 24px;
+    font-size: 32px;
     color:#2C6700;
     font-weight: 900;
     margin-bottom: 15px;
+    line-height: normal;
     text-align: center;
 }
 .text-title2{
     font-size: 42px;
     color:white;
     font-weight: 900;
-    margin-bottom: 10px;
+
+    line-height: normal;
     text-align: center;
 }
 .col-1{
@@ -712,9 +865,10 @@ label {
     font-size: 42px;
     color:white;
     font-weight: 900;
-
   
-    margin-bottom: 15px;
+    line-height: normal;
+  
+    margin: 0px 50px;
     text-align: center;
 }   
 .preguntas{
@@ -741,7 +895,7 @@ label {
 
 @media only screen and (max-width: 1100px) {
     .card {
-        width: 450px;
+        width: 400px;
         border: 6px solid #ccc;
         border-radius: 8px;
         background-color:#2C6700;
@@ -755,14 +909,14 @@ label {
         display: grid;
     }   
     .text-title{
-        font-size: 24px;
+        font-size: 28px;
         color:#2C6700;
         font-weight: 900;
         margin-bottom: 15px;
         text-align: center;
     }
     .text-title2{
-        font-size: 42px;
+        font-size: 32px;
         color:white;
         font-weight: 900;
         margin-bottom: 10px;
@@ -776,11 +930,11 @@ label {
         width: 50%;
     }
     .TextoInicio{
-        font-size: 42px;
+        font-size: 36px;
         color:white;
         font-weight: 900;
-    
-        margin-bottom: 15px;
+        margin: 0px 20px;
+        line-height: normal;
         text-align: center;
     }
     .preguntas{
@@ -830,6 +984,32 @@ label {
         border-radius: 8px;
         overflow: hidden;
         padding: 20px;
+    }
+    .items{
+        background-color: #891094;
+        width: 250px;
+        height: 480px;
+         padding: 10px;
+         margin: 10px;
+        border: 5px solid #3f5c05;
+        border-radius: 8px;
+        text-align: center;
+
+        font-family: "Dosis", sans-serif;
+       
+    }
+    .items-title{
+        background-color: #3f5c05;
+        width: 250px;
+        height: 50px;
+        border-radius: 8px;
+        margin: 10px;
+        border: 5px solid #3f5c05;
+        text-align: center;
+        font-size: 28px;
+        color: #fff;
+        font-weight: bold;
+        font-family: "Dosis", sans-serif;
     }
 }
 
@@ -978,6 +1158,71 @@ label {
     .imgWidth{
         width: 80%;
     }
+    .Contact{
+        display: flex;
+        flex-direction: column;
+       
+        margin: 35px 0px 130px;
+         align-items: center;
+        justify-content:center;
+       
+     }
+     .imag-Contact{
+        width:500px;
+        height:"auto";
+        border: 6px solid #ccc;
+     }
+     .registro3 {
+        width: 500px;
+         height: 700px;
+         flex-direction: column;
+         display: flex;
+          
+         border: 6px solid #ccc;
+         border-radius: 8px;
+         background-color:#2C6700;
+         overflow: hidden;
+         box-shadow: 0 15px 8px rgba(0, 0, 0, 0.1);
+       
+         padding: 15px 25px;
+         text-align: center;
+    
+         align-items: center;
+      
+    }
+    .seccion-nosotros{
+        display:flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .items{
+        background-color: #891094;
+        width: 300px;
+        height: 370px;
+         padding: 10px;
+         margin: 10px;
+        border: 5px solid #3f5c05;
+        border-radius: 8px;
+        text-align: center;
+        overflow: auto;
+        font-family: "Dosis", sans-serif;
+       
+    }
+    .items-title{
+        background-color: #3f5c05;
+        width: 300px;
+        height: 50px;
+        border-radius: 8px;
+        margin: 10px;
+        border: 5px solid #3f5c05;
+        text-align: center;
+        font-size: 28px;
+        color: #fff;
+        font-weight: bold;
+        font-family: "Dosis", sans-serif;
+    }
 
 }
 
@@ -1060,7 +1305,7 @@ label {
       }
 
 
-      input{
+      .input{
         padding: 10px 15px;
         width: 250px;
         border-radius: 8px;
@@ -1109,7 +1354,7 @@ label {
     text-align: center;
     font-size: 28px;
    margin: 0 auto;
-    font-family: "Open Sans", sans-serif;
+    
    
 }
 .footer {
@@ -1146,6 +1391,7 @@ label {
     font-size: 1em;
     color: #fff;
     height: auto;
+    font-family: "Dosis", sans-serif;
 }
 
 .parrafo-responsive{
@@ -1154,6 +1400,7 @@ label {
     height: auto;
     padding: 5px;
     overflow: auto;
+    font-family: "Dosis", sans-serif;
 }
 
 .preguntas{
@@ -1164,54 +1411,46 @@ label {
     padding: 20px 0px;
     align-items: center;
     flex-wrap: wrap;
+    font-family: "Dosis", sans-serif;
 }
 
-@media screen and (max-width: 320px){
-    .preguntas{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        width: 100%;
-        height: auto;
-        background-color: #f79f1b;
-        padding: 20px 0px;
-    }
-    .tarjeta{
-        display:inline-block;
-        background-color: #660066;
-        border-radius: 8px;
-        max-width: 300px;
-        width: 100%;
-        height:450px;
-        text-align: center;
-        margin-bottom: 10px;
-        padding: 20px;
-        overflow: scroll;
-    }
+
+@media only screen and (max-width: 500px) {
+.Contact{
+    display: flex;
+    flex-direction: column;
+   
+    margin: 35px 0px 130px;
+     align-items: center;
+    justify-content:center;
+   
+ }
+ .imag-Contact{
+    width:400px;
+    height:"auto";
+    border: 6px solid #ccc;
+ }
+ .registro3 {
+    width: 400px;
+     height: 700px;
+     flex-direction: column;
+     display: flex;
+      
+     border: 6px solid #ccc;
+     border-radius: 8px;
+     background-color:#2C6700;
+     overflow: hidden;
+     box-shadow: 0 15px 8px rgba(0, 0, 0, 0.1);
+   
+     padding: 15px 25px;
+     text-align: center;
+
+     align-items: center;
+  
 }
-@media screen and (max-width: 375px){
-    .preguntas{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        width: 100%;
-        height: auto;
-        background-color: #f79f1b;
-        padding: 20px 0px;
-    }
-    .tarjeta{
-        display:inline-block;
-        background-color: #660066;
-        border-radius: 8px;
-        max-width: 300px;
-        width: 100%;
-        height:450px;
-        text-align: center;
-        margin-bottom: 10px;
-        padding: 20px;
-        overflow: scroll;
-    }
+
 }
+
 
 @media screen and (max-width: 425px){
     .preguntas{
@@ -1260,8 +1499,141 @@ label {
         float: right;
         margin-top: 10px;
     }
+    .imag-Contact{
+        width:370px;
+        height:"auto";
+        border: 6px solid #ccc;
+     }
+     .registro3 {
+        width: 370px;
+         height: 700px;
+         flex-direction: column;
+         display: flex;
+          
+         border: 6px solid #ccc;
+         border-radius: 8px;
+         background-color:#2C6700;
+         overflow: hidden;
+         box-shadow: 0 15px 8px rgba(0, 0, 0, 0.1);
+       
+         padding: 15px 25px;
+         text-align: center;
+    
+         align-items: center;
+      
+    }
+    ul{
+        text-align: left;
+        display: inline-flex;
+        flex-direction: column;
+        list-style: none;
+       
+       
+     }
 }
 
+@media screen and (max-width: 320px){
+    .preguntas{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 100%;
+        height: auto;
+        background-color: #f79f1b;
+        padding: 20px 0px;
+    }
+    .tarjeta{
+        display:inline-block;
+        background-color: #660066;
+        border-radius: 8px;
+        max-width: 300px;
+        width: 100%;
+        height:450px;
+        text-align: center;
+        margin-bottom: 10px;
+        padding: 20px;
+        overflow: scroll;
+    }
+    .imag-Contact{
+        width:300px;
+        height:"auto";
+        border: 6px solid #ccc;
+     }
+     
+     .registro3 {
+        width: 300px;
+         height: 700px;
+         flex-direction: column;
+         display: flex;
+          
+         border: 6px solid #ccc;
+         border-radius: 8px;
+         background-color:#2C6700;
+         overflow: hidden;
+         box-shadow: 0 15px 8px rgba(0, 0, 0, 0.1);
+       
+         padding: 15px 25px;
+         text-align: center;
+    
+         align-items: center;
+      
+    }
+}
+@media screen and (max-width: 375px){
+    .preguntas{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 100%;
+        height: auto;
+        background-color: #f79f1b;
+        padding: 20px 0px;
+    }
+    .tarjeta{
+        display:inline-block;
+        background-color: #660066;
+        border-radius: 8px;
+        max-width: 300px;
+        width: 100%;
+        height:450px;
+        text-align: center;
+        margin-bottom: 10px;
+        padding: 20px;
+        overflow: scroll;
+    }
+    .imag-Contact{
+        width:300px;
+        height:"auto";
+        border: 6px solid #ccc;
+     }
+
+     .registro3 {
+        width: 300px;
+         height: 700px;
+         flex-direction: column;
+         display: flex;
+          
+         border: 6px solid #ccc;
+         border-radius: 8px;
+         background-color:#2C6700;
+         overflow: hidden;
+         box-shadow: 0 15px 8px rgba(0, 0, 0, 0.1);
+       
+         padding: 15px 25px;
+         text-align: center;
+    
+         align-items: center;
+      
+    }
+    ul{
+        text-align: left;
+        display: inline-flex;
+        flex-direction: column;
+        list-style: none;
+       
+       
+     }
+}
 
 
 
@@ -1272,4 +1644,5 @@ label {
     color: #fff;
     text-align: center;
     font-weight: bold;
+    font-family: "Dosis", sans-serif;
 }

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,25 +17,29 @@
      <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/4d4e78c4c7.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-latest.js"></script>
-    <script src="../static/menu.js"></script> 
-    <script src="../static/funciones.js"></script>
+ <script src="../static/menu.js"></script> 
+ <script src="../static/funciones.js"></script>
+
 </head>
 <body>
     <header>
-        <h5 id="mensaje-bienvenida"></h5>
+     
+
+
         <div class="menu_bar">
-            <a href="#" class="bt-menu"><i class="fa-solid fa-bars"></i></a>
-        </div>
+			<a href="#" class="bt-menu"><i class="fa-solid fa-bars"></i></a>
+		</div>
         <nav class="navdirection">
             <div class="">
                 <img src="../src/img/logores2.png" width="150px" class="logoNav"/>
                 <button class="close menu_bar buttonNav" style="width: 35px;">X</button>
                </div>
             <ul class="navbar">
-                <li><a href="../index.html">Inicio</a></li>
+                <li> <a href="../index.html">Inicio</a></li>
                 <li><a href="">Nosotros</a></li>
-                <li><a href="adopcion.html">Adopcion</a></li>
+                <li><a href="">Adopcion</a></li>
                 <li> <a href="perdidos.html">Perdidos</a></li>
+                <!-- <li>Encontrados</li> -->
                 <li><a href="protectoras.html">Protectoras</a></li>
                 <!-- <li>Colaborá</li> -->
                 <li><a href="preguntasFre.html">Preguntas</a></li>
@@ -43,74 +47,26 @@
                 <li><a href="login.html"><i class="fa-solid fa-user iconL"></i></a></li>
               
             </ul>
-         
-        </nav>
-       </header>
-
-    <main>
-
-        <div class="formu-usuario">
-
-     
-            <h2 id="mensaje-bienvenida"></h2>
-            <h1>Registrate</h1>
-            <br>
-            <div class="registro2">
-                <form action="../index.html" onsubmit="return validarDatos()">
-               <div> 
-                <label for="mail">Ingresa un mail:</label>
-                <input class="input" type="email" name="mail" id="mail" required>
-               </div>
-               <br> 
-               <div>
-                <label for="nuevo-usuario">Crea un nombre de usuario:</label>
-                <input class="input"  type="text" name="nuevo-usuario" id="nuevo-usuario" required>
-               </div> 
-                <br>
-               <div> 
-                <label for="contraseña">Ingresa una contraseña:</label>
-                <input class="input"  type="password" name="contraseña" id="contraseña" required>
-               </div>  
-               <br>
-               <div class="preferencias"> 
-                <p>Selecciona tu preferencia</p>
-                <div class="dropdown-wrapper">
-                <select name="preferencias" id="preferencias" class="dropdown"m required>
-       
-              <option value="gatito">gatos</option>
-              <option value="perrito">perros</option>
-              <option value="aves">aves</option>
-              <option value="reptiles">reptiles</option>
-               <option value="anfibios">anfibios</option>
-
-             </select></div>
-            
-            </div>
-               <button class="button-cam"><a href="../index.html" id="boton-guardar">Guardar</a></button>
-            </form>
-             
-            <div style="flex-direction: row; display: flex;">
-            <p class="boton-ingreso"><span class="text-title4">¿Ya tenés una cuenta? </span></p>
-            <button class="button-cam"><a href="login.html" id="login-ingreso"><u>Ingresa acá</u></a></button>
-            </p>
-
-
-
-             </div>   </div>
-        </div>
-    
-    
-    <div style="display: flex; justify-content: center;margin-top: 35px;">
-        <img src="../src/img/img-1.png"  class="imgWidth"/>
-    </div>
         
-    </main>
+        </nav>
+    </header>
+    <main> 
+     
 
+        <div><h1><bold>Mascotas en adopcion</bold></h1></div>
+        <div id="cajita">
+           
+
+        </div>
+
+
+
+    </main>
     <footer>
 
         <div class="footer">
-    
-            <img src="../src/img/logores2.png" width="80px" height="100%" style="margin-top: 25px;"/>
+
+            <img src="../src/img/logores2.png" width="80px" height="100%"  style="margin-top: 25px;"/>
             <div>
                 <p><a href="conctactanos.html">CONTACTANOS</a></p>
             <p>info@rescapet.com</p>
@@ -142,10 +98,8 @@
             
             
             </script> 
-          
     </footer>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="../static/validacionregistro.js"></script>
-    <script src="../static/localStorage.js"></script>
+    <script src="../static/get.js"></script>
 </body>
 </html>

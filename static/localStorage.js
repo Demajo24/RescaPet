@@ -1,4 +1,5 @@
 const entradaUsuario = document.getElementById("nuevo-usuario")
+const entradaContraseña = document.getElementById("contraseña")
 
 const mensajeBienvenida = document.getElementById("mensaje-bienvenida")
 
@@ -15,7 +16,7 @@ botonGuardar.addEventListener('click', () =>{
     const usuario = entradaUsuario.value
 
     if (usuario !== "") {
-        localStorage.setItem("usuario", usuario)
+        localStorage.setItem("nuevo-usuario", usuario)
 
         mensajeBienvenida.textContent = `Bienvenido/a ${usuario}`
     }

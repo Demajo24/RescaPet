@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!--Palabras claves-->
+     <meta name="Keywords" content="ayuda,rescate, mascotas, perros, adopcion, transito, animales perdidos, colaboracion, proteccion, protectoras
+     busqueda,">
+     <!--Descripcion-->
+     <meta name="description" content="Ayuda y rescate de animales">
+    <link rel="shortcut icon" href="../src/img/logores2.png" type="image/x-icon" sizes="32x32"/>
+    <title>contactanos</title>
+    <link href="../static/css/resca.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/4d4e78c4c7.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+    
+ <script src="../static/menu.js"></script> 
+ <script src="../static/funciones.js"></script>
+
+</head>
+<body>
+    <header>
+
+        
+        <h5 id="mensaje-bienvenida"></h5>
+         <div class="menu_bar">
+			<a href="#" class="bt-menu"><i class="fa-solid fa-bars"></i></a>
+		</div> 
+        <nav class="navdirection">
+            <div class="">
+            <img src="../src/img/logores2.png" width="150px" class="logoNav"/>
+            <button class="close menu_bar buttonNav" style="width: 35px;">X</button>
+           </div>
+
+            <ul class="navbar">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="">Nosotros</a></li>
+                <li><a href="adopcion.html">Adopcion</a></li>
+                <li><a href="perdidos.html">Perdidos</a></li>
+                <!-- <li>Encontrados</li> -->
+                <li><a href="protectoras.html">Protectoras</a></li>
+                <!-- <li>Colaborá</li> -->
+                <li><a href="preguntasFre.html">Preguntas</a></li>
+                <li><a href="">Contacto</a></li>
+                <li><a href="login.html"><i class="fa-solid fa-user iconL"></i></a></li>
+              
+            </ul>
+           
+        </nav>
+    </header>
+    <main>
+         
+            <div class="Contact">
+                <div class="column">
+                    <h1 style="margin-bottom: 50px;">¿Querés contactarnos?</h1>
+                  
+            <img src="../src/img/perroLeyendo.jpg" alt="perroLeyendo" class="imag-Contact"></div>
+            <div class="column">
+            <div class="registro3">
+        <form action="../index.html">
+            <fieldset style="margin:15px; padding: 25px;">
+            <legend class="text-title4">Datos personales</legend>
+            <div>
+             <label for="nombre">nombre</label>
+             <input class="input"  size="30" type="text" name="nombre" required placeholder="Ingrese su nombre aquí...">
+            </div>
+            <div>
+             <label for="ciudad">ciudad</label>
+             <input class="input"  type="text" name="ciudad" required  placeholder="Ingrese su ciudad aquí...">
+            </div>
+            <div> 
+             <label for="mail">mail</label>
+             <input class="input"  type="email" name="email" required placeholder="Ingrese su mail aquí...">
+            </div>
+         </fieldset>
+         <div style="display: flex;flex-direction: column;">
+         <div>
+         <p class="text-title4" style="margin-bottom: 5px;">Sobre su consulta:</p>
+        
+         <ul>
+         <li class="text-title5">Mascota perdida <input class="checkbox" type="checkbox" name="consulta" value="Mascota perdida"></li>
+
+         <li class="text-title5">Adopción<input class="checkbox" type="checkbox" name="consulta" value="Adopcion"></li>
+         <li class="text-title5">Donaciones<input class="checkbox" type="checkbox" name="consulta" value="Donaciones"></li>
+        
+        </ul>
+         <ul>
+         <li class="text-title5">Denuncias sobre maltrato animal<input class="checkbox" type="checkbox" name="consulta" value="Denuncia"></li>
+         <li class="text-title5">Otros<input class="checkbox" type="checkbox" name="consulta" value="Otros"></li>
+        </ul> 
+         
+        </div>
+        <div style="margin-top: 25px;">
+          <label class="text-title4"  for="comentarios">Especificanos tu consulta</label>
+         <textarea style="width: 350px; margin:15px;" name="comentarios" id="comentarios" rows="5" cols="30"></textarea>
+         <br/>
+         <button type="submit" value="Enviar" class="button-env text-title6">Enviar</button> 
+         <button type="reset" class="button-env text-title6">Borrar</button></div>
+        </form>
+            </div></div></div>
+        </div>
+    </main>
+    <footer>
+
+        <div class="footer">
+
+            <img src="../src/img/logores2.png" width="80px" height="100%" style="margin-top: 25px;"/>
+            <div>
+            <p>CONTACTANOS</p>
+            <p>info@rescapet.com</p>
+            </div>
+            <div class="redes">
+            <p>SEGUINOS</p>
+            <i class="fa-brands fa-facebook iconXL"></i>
+            </div>
+        </div>
+        <i class="fa-solid fa-arrow-up ir-arriba"></i>
+        <script>
+            $(document).ready(function(){
+            
+            $('.ir-arriba').click(function(){
+                $('body, html').animate({
+                    scrollTop: '0px'
+                }, 300);
+            });
+            
+            $(window).scroll(function(){
+                if( $(this).scrollTop() > 0 ){
+                    $('.ir-arriba').slideDown(300);
+                } else {
+                    $('.ir-arriba').slideUp(300);
+                }
+            });
+            
+            });
+            
+            
+       </script> 
+          
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../static/localStorage.js"></script>
+</body>
+</html>

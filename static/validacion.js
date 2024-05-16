@@ -1,6 +1,6 @@
 function validarDatos(){
   
-    let nombre = document.getElementById("nombre").value.trim()                   
+    let nombre = document.getElementById("usuario").value.trim()                   
   
     let contraseña = document.getElementById("contraseña").value.trim()
     let error = document.getElementById("campos")
