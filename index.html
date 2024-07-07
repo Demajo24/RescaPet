@@ -45,7 +45,10 @@
                 <li><a href="Templates/protectoras.html">Protectoras</a></li>
                 <li><a href="Templates/conctactanos.html">Contacto</a></li>
                 <li><a href="Templates/login.html"><i class="fa-solid fa-user iconL"></i></a></li>
-                <li><a href="tabla_productos.html"><i class="fa-solid fa-user-tie iconL"></i></a></li>
+                <li><a href="tabla_productos.html"> <span>Admin</span>
+                    <i class="fa-solid fa-user-tie iconL"></i>
+                   
+                </a></li>
             </ul>
         </nav>
     </header>
@@ -76,13 +79,13 @@
                             <button class="buttonClose" id="btnCerrarModal">X</button>
                             <form action="" onsubmit="return validarDatos(event)">
                                 <div class="Form">
-                                    <div style="display: inline-flex; margin-top: 15px;">
+                                    <!-- <div style="display: inline-flex; margin-top: 15px;">
                                         <input class="radiobutton" type="radio" name="opcion" value="1" id="perro">
                                         <label for="perro">perritos</label>
                                         <input type="radio" class="radiobutton" name="opcion" value="2" id="gatitos">
                                         <label for="gatitos">gatitos</label>
-                                    </div>
-                                    <div style="justify-content:center;">
+                                    </div> -->
+                                    <div style="display:flex; justify-items:center; margin:15px; flex-direction: column;">
                                         <label for="fname">Nombre:</label>
                                         <input class="input" type="text" id="nombre" name="fname" required><br><br>
                                         <label for="email">Correo electrónico:</label>

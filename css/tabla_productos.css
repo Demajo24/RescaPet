@@ -8,21 +8,23 @@ html{
     font-family:"Dosis", sans-serif;
 
 }
-/* .container{
-    background-color: #ff6600;
+ .containerB{
+
     height: 100vh;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+ 
+    margin: 0px auto;
     font-family:"Dosis","Roboto" sans-serif !important;
     
-} */
+} *
 
 
 .table-container .tabla th, .table-container .tabla td {
     border: 1px solid #ddd;
-    padding: 8px;
+    padding: 8px 15px;
+  
+
 }
 
 .table-container .tabla th {
@@ -33,7 +35,7 @@ html{
 table {
     background-color:#2C6700;
     border-collapse: collapse;
-  
+     width: 75%;
     margin: 2vw auto;
     font-family:"Dosis","Roboto" sans-serif;
     height:auto;
@@ -58,12 +60,21 @@ th {
     color: #001F3F;
     font-family:"Dosis","Roboto" sans-serif;
 }
-@media only screen and (max-width:768px){
+@media only screen and (max-width:930px){
     .table-container{
-        margin: 0px 25px;
-        width: 85%;
+      
+      
         overflow-x: auto;
     }
+    table {
+        background-color:#2C6700;
+        border-collapse: collapse;
+         width: 75%;
+        margin: 2vw auto;
+        font-family:"Dosis","Roboto" sans-serif;
+        height:auto;
+        
+      }
 }
 a{
     color:white;
@@ -74,21 +85,15 @@ a:active{
 }
 
 a:hover{
-    color:#FF9900;
+    color:#ff6600 !important; 
 }
 a:active{
     color:chartreuse;
 }
 
-td:hover{
-  
-    color:#FF9900;
-}
 
-a:hover{
 
-    color:#FF9900;
-}
+
 
 .nav{
     text-decoration: none;
@@ -110,10 +115,13 @@ a:hover{
     font-weight: 700;
     text-decoration: none;
     text-decoration-style: none;
-
+    
 }
 
+.text-nav:hover{
+    color:#ff6600 !important;
 
+}
 .inputB{
     padding: 10px 15px;
     margin: 10px 0px !important;
@@ -124,7 +132,9 @@ a:hover{
 
 
  }
-
+.iconL{
+    padding-right: 15px;
+}
 .boton{
     
     color: #f2f2f2;
@@ -141,7 +151,9 @@ a:hover{
     cursor: pointer; /* Cambia el cursor al pasar el ratón */
     font-family: "Dosis","Roboto" sans-serif;
 }
-
+.boton:hover{
+    background-color: chartreuse;
+}
 .boton2{
     
     color: #f2f2f2;
@@ -158,7 +170,10 @@ a:hover{
     cursor: pointer; /* Cambia el cursor al pasar el ratón */
     font-family: "Dosis","Roboto" sans-serif;
 }
+.boton2:hover{
 
+    background-color: #ff6600;
+}
 .nuevo{
     color: #f2f2f2;
     margin-right: 2vh;
