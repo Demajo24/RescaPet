@@ -1,11 +1,11 @@
 function guardar() {
-    let nombre_ingresado = document.getElementById("nombre").value //input
+    let nombre_ingresado = document.getElementById("nombre").value 
     let email_ingresado = document.getElementById("email").value 
     let informacion_ingresada = document.getElementById("informacion").value 
     // let imagen_ingresada = document.getElementById("imagen").value 
 
     console.log(nombre_ingresado,email_ingresado,informacion_ingresada);
-    // Se arma el objeto de js 
+
     let datos = {
         nombre:nombre_ingresado,
         email:email_ingresado,
@@ -24,7 +24,7 @@ function guardar() {
         .then(function () {
             console.log("creado")
             alert("Grabado")
-            // Devuelve el href (URL) de la página actual
+          
             window.location.href = "index.html";  
             
         })

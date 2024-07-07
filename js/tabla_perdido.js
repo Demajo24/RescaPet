@@ -3,20 +3,19 @@ const { createApp } = Vue
   createApp({
     data() {
       return {
-        url:"https://demajo.pythonanywhere.com/perdidos", // Retorna todos los registro de la tabla productos
+        url:"https://demajo.pythonanywhere.com/perdidos", 
         perdidos:[],
         error:false,
         cargando:true
       }
     },
-    // Se llama después de que la instancia haya 
-    // terminado de procesar todas las opciones relacionadas con el estado.
+  
     created() {
-        this.fetchData(this.url)  // Invocando al método
+        this.fetchData(this.url)  
     },
     methods: {
         fetchData(url) {
-            // Acá se consume la Api  /productos
+         
             fetch(url)
                 .then(response => response.json())
                 .then(data => {
@@ -28,7 +27,7 @@ const { createApp } = Vue
                     this.error=true              
                 });
         },
-        // el id se necesita para buscar en la DB y eliminarlo
+   
         eliminar(id) {
             
             const url = 'https://demajo.pythonanywhere.com/borrar/'+id;
