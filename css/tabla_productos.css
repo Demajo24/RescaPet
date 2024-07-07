@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0%;
+    padding: 0%;
+    
+}
+html{
+    font-family:"Dosis", sans-serif;
+
+}
+/* .container{
+    background-color: #ff6600;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family:"Dosis","Roboto" sans-serif !important;
+    
+} */
+
+
+.table-container .tabla th, .table-container .tabla td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.table-container .tabla th {
+    background-color: #f2f2f2;
+    text-align: left;
+}
+
+table {
+    background-color:#2C6700;
+    border-collapse: collapse;
+  
+    margin: 2vw auto;
+    font-family:"Dosis","Roboto" sans-serif;
+    height:auto;
+    
+  }
+
+th, td {
+    border: 0.1vw solid #dddddd;
+
+    padding: 0.8vw;
+    text-align: left;
+    font-family:"Dosis","Roboto" sans-serif;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    
+  }
+
+th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+    color: #001F3F;
+    font-family:"Dosis","Roboto" sans-serif;
+}
+@media only screen and (max-width:768px){
+    .table-container{
+        margin: 0px 25px;
+        width: 85%;
+        overflow-x: auto;
+    }
+}
+a{
+    color:white;
+    font-family:"Dosis","Roboto" sans-serif;
+}
+a:active{
+    color:white;
+}
+
+a:hover{
+    color:#FF9900;
+}
+a:active{
+    color:chartreuse;
+}
+
+td:hover{
+  
+    color:#FF9900;
+}
+
+a:hover{
+
+    color:#FF9900;
+}
+
+.nav{
+    text-decoration: none;
+    background-color:blueviolet; 
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Dosis","Roboto" sans-serif;
+    gap: 2vw;
+    
+
+}
+.text-nav{
+
+    font-family: "Dosis","Roboto" sans-serif;
+    color:white;
+    font-size: 24px;
+    font-weight: 700;
+    text-decoration: none;
+    text-decoration-style: none;
+
+}
+
+
+.inputB{
+    padding: 10px 15px;
+    margin: 10px 0px !important;
+    width: 300px;
+    border-radius: 8px;
+   
+    font-family: "Dosis", sans-serif;
+
+
+ }
+
+.boton{
+    
+    color: #f2f2f2;
+    margin-right: 2vh;
+    background-color: #4CAF50; /* Color de fondo */
+    color: white; /* Color del texto */
+    padding: 0.5vw 3vh; /* Relleno interno */
+    border: none; /* Quita el borde */
+    border-radius: 2vw; /* Borde redondeado */
+    text-align: center; /* Alineación del texto */
+    text-decoration: none; /* Quita el subrayado predeterminado */
+    display: inline-block; /* Mostrar como bloque en línea */
+    font-size: 1vw; /* Tamaño de fuente */
+    cursor: pointer; /* Cambia el cursor al pasar el ratón */
+    font-family: "Dosis","Roboto" sans-serif;
+}
+
+.boton2{
+    
+    color: #f2f2f2;
+    margin-right: 2vh;
+    background-color:red; /* Color de fondo */
+    color: white; /* Color del texto */
+    padding: 0.5vw 3vh; /* Relleno interno */
+    border: none; /* Quita el borde */
+    border-radius: 2vw; /* Borde redondeado */
+    text-align: center; /* Alineación del texto */
+    text-decoration: none; /* Quita el subrayado predeterminado */
+    display: inline-block; /* Mostrar como bloque en línea */
+    font-size: 1vw; /* Tamaño de fuente */
+    cursor: pointer; /* Cambia el cursor al pasar el ratón */
+    font-family: "Dosis","Roboto" sans-serif;
+}
+
+.nuevo{
+    color: #f2f2f2;
+    margin-right: 2vh;
+    background-color: #001F3F50; /* Color de fondo */
+    color: white; /* Color del texto */
+    padding: 0.5vw 3vh; /* Relleno interno */
+    border: none; /* Quita el borde */
+    border-radius: 2vw; /* Borde redondeado */
+    text-align: center; /* Alineación del texto */
+    text-decoration: none; /* Quita el subrayado predeterminado */
+    display: inline-block; /* Mostrar como bloque en línea */
+    font-size: 1vw; /* Tamaño de fuente */
+    cursor: pointer; /* Cambia el cursor al pasar el ratón */
+    font-family: "Dosis","Roboto" sans-serif;
+}
+
+
+
+
+

@@ -21,6 +21,7 @@
  <script src="../static/menu.js"></script> 
  <script src="../static/funciones.js"></script>
 
+
 </head>
 <body>
     <header>
@@ -37,14 +38,20 @@
            </div>
 
             <ul class="navbar">
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="">Nosotros</a></li>
+                <li><a href="../index.html">Pide ayuda</a></li>
+                <div class="dropdown-nav">
+                    <li><a href="">Conocenos!</a></li>
+                    <div class="dropdown-content">
+                        <a href="nosotros.html">Nosotros</a>
+                        <a href="preguntasFre.html">Preguntas Frecuentes</a>
+                    </div>
+                </div>
                 <li><a href="adopcion.html">Adopcion</a></li>
                 <li><a href="perdidos.html">Perdidos</a></li>
                 <!-- <li>Encontrados</li> -->
                 <li><a href="protectoras.html">Protectoras</a></li>
                 <!-- <li>Colaborá</li> -->
-                <li><a href="preguntasFre.html">Preguntas</a></li>
+              
                 <li><a href="">Contacto</a></li>
                 <li><a href="login.html"><i class="fa-solid fa-user iconL"></i></a></li>
               
@@ -54,28 +61,35 @@
     </header>
     <main>
          
-            <div class="Contact">
-                <div class="column">
+    <div class="Contact">
+           <div class="column">
                     <h1 style="margin-bottom: 50px;">¿Querés contactarnos?</h1>
                   
-            <img src="../src/img/perroLeyendo.jpg" alt="perroLeyendo" class="imag-Contact"></div>
+            <img src="../src/img/perroLeyendo.jpg" alt="perroLeyendo" class="imag-Contact">
+           </div>
             <div class="column">
             <div class="registro3">
-        <form action="../index.html">
+                <form action=""  onsubmit="return validarDatos(event)">
             <fieldset style="margin:15px; padding: 25px;">
             <legend class="text-title4">Datos personales</legend>
             <div>
-             <label for="nombre">nombre</label>
-             <input class="input"  size="30" type="text" name="nombre" required placeholder="Ingrese su nombre aquí...">
+             <label for="nombre">nombre:</label>
+             <br>
+             <input class="input"  size="30" type="text" id="name" name="nombre" required placeholder="Ingrese su nombre aquí...">
             </div>
+            <br/>
             <div>
-             <label for="ciudad">ciudad</label>
-             <input class="input"  type="text" name="ciudad" required  placeholder="Ingrese su ciudad aquí...">
+             <label for="ciudad">ciudad:</label>
+             <br>
+             <input class="input"  type="text" name="ciudad" id="ciudad" required  placeholder="Ingrese su ciudad aquí...">
             </div>
+            <br/>
             <div> 
-             <label for="mail">mail</label>
-             <input class="input"  type="email" name="email" required placeholder="Ingrese su mail aquí...">
+             <label for="mail">mail:</label>
+             <br>
+             <input class="input"  type="email" name="email" id="email" required placeholder="Ingrese su mail aquí...">
             </div>
+            <br/>
          </fieldset>
          <div style="display: flex;flex-direction: column;">
          <div>
@@ -94,14 +108,19 @@
         </ul> 
          
         </div>
-        <div style="margin-top: 25px;">
+        <div style="margin-top: 35px; padding-bottom: 35px;">
           <label class="text-title4"  for="comentarios">Especificanos tu consulta</label>
          <textarea style="width: 350px; margin:15px;" name="comentarios" id="comentarios" rows="5" cols="30"></textarea>
          <br/>
+         <div id="campos"></div>
          <button type="submit" value="Enviar" class="button-env text-title6">Enviar</button> 
-         <button type="reset" class="button-env text-title6">Borrar</button></div>
-        </form>
-            </div></div></div>
+         <button type="reset" class="button-env text-title6">Borrar</button>
+        </div>
+ 
+                </form>
+            </div>
+           </div>
+    </div>
         </div>
     </main>
     <footer>
@@ -142,6 +161,7 @@
        </script> 
           
     </footer>
+    <script src="../static/validacion-contacto.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="../static/localStorage.js"></script>
 </body>

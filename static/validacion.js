@@ -1,4 +1,6 @@
-function validarDatos(){
+function validarDatos(event) {
+    event.preventDefault(); // Evitar que el formulario se envíe automáticamente
+
   
     let nombre = document.getElementById("usuario").value.trim()                   
   
@@ -21,22 +23,24 @@ function validarDatos(){
     
     // Verificar si la contraseña contiene solo 8 dígitos numéricos
     // contraseña = "12345678"
-    if(direccion.length !== 8){
+    if(contraseña.length !== 8){
         error.textContent = "Por favor ingrese una contraseña de numeros correctamente."
         error.style.color = "red"
         return false
     }
     
     // Verificar contraseña no es un número
-    if(isNaN(direccion)){
+    if(isNaN(contraseña)){
         error.textContent = "Por favor ingrese correctamente los números."
         error.style.color = "red"
         return false
     }
     
-    // Si todas las validaciones son exitosas, informar
-    alert("Datos validados.")
-    return true
+ // Si todas las validaciones pasan, mostramos un alert
+ alert("¡Todos los datos son enviados correctamente!");
+ // Aquí puedes agregar cualquier otra acción que necesites después de enviar los datos
+
+ event.target.submit();
   
 }
 

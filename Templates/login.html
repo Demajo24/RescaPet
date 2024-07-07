@@ -33,14 +33,20 @@
             <button class="close menu_bar buttonNav" style="width: 35px;">X</button>
            </div>
         <ul class="navbar">
-            <li><a href="../index.html">Inicio</a></li>
-            <li><a href="">Nosotros</a></li>
+            <li><a href="../index.html">Pide ayuda</a></li>
+            <div class="dropdown-nav">
+                <li><a href="">Conocenos!</a></li>
+                <div class="dropdown-content">
+                    <a href="nosotros.html">Nosotros</a>
+                    <a href="preguntasFre.html">Preguntas Frecuentes</a>
+                </div>
+            </div>
             <li><a href="adopcion.html">Adopcion</a></li>
             <li><a href="perdidos.html">Perdidos</a></li>
             <!-- <li>Encontrados</li> -->
             <li><a href="protectoras.html">Protectoras</a></li>
             <!-- <li>Colaborá</li> -->
-            <li><a href="preguntasFre.html">Preguntas</a></li>
+          
             <li><a href="conctactanos.html">Contacto</a></li>
             <li><a href=""><i class="fa-solid fa-user iconL"></i></a></li>
           
@@ -58,19 +64,21 @@
      
         <div class="registro">
     
-            <form action="../index.html" onsubmit="return validarDatos()">
+            <form action=""  onsubmit="return validarDatos(event)">
                 <div>
                     <label for="usuario">Usuario:</label>
                     <br>
                     <input class="input"  type="text" name="usuario" id="usuario" required>
                     <br>
                    <div> 
-             <label for="contraseña">Ingresa tu contraseña:</label>
-             <br>
-             <input class="input"  type="password" name="contraseña" id="contraseña" required>
-            </div> 
-            <br/>
-            <button id="boton-guardar" class="button-cam"><a href="/index.html"> <span class="text-button">Ingresa</span></a></button>
+                    <br/>
+                  <label for="contraseña">Ingresa tu contraseña:</label>
+                  <br>
+                 <input class="input"  type="password" name="contraseña" id="contraseña" required>
+                  </div> 
+                  <br/>
+                 <div id="campos"></div>
+            <button id="boton-guardar" type="submit" class="button-cam"><a href=""> <span class="text-button">Ingresa</span></a></button>
         </form>
    
         <br>
@@ -79,7 +87,8 @@
 
           <button class="button-cam"><a href="../Templates/registro.html" id="login-ingreso">Ingresa acá</a></button>
         </p>
-          </div>     </div>
+          </div>     
+        </div>
     </div>
     <div style="display: flex; justify-content: center;margin-top: 35px;">
         <img src="../src/img/img-1.png"  class="imgWidth"/>
@@ -127,7 +136,7 @@
     </script>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-<script src="../static/validacionregistro.js"></script>
+<script src="../static/validacion.js"></script>
 <!-- <script src="../static/localStorage.js"></script>> -->
 </body>
 </html>

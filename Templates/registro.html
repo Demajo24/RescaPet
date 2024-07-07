@@ -32,13 +32,19 @@
                 <button class="close menu_bar buttonNav" style="width: 35px;">X</button>
                </div>
             <ul class="navbar">
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="">Nosotros</a></li>
+                <li><a href="../index.html">Pide ayuda</a></li>
+                <div class="dropdown-nav">
+                    <li><a href="">Conocenos!</a></li>
+                    <div class="dropdown-content">
+                        <a href="nosotros.html">Nosotros</a>
+                        <a href="preguntasFre.html">Preguntas Frecuentes</a>
+                    </div>
+                </div>
                 <li><a href="adopcion.html">Adopcion</a></li>
                 <li> <a href="perdidos.html">Perdidos</a></li>
                 <li><a href="protectoras.html">Protectoras</a></li>
                 <!-- <li>Colaborá</li> -->
-                <li><a href="preguntasFre.html">Preguntas</a></li>
+              
                 <li><a href="conctactanos.html">Contacto</a></li>
                 <li><a href="login.html"><i class="fa-solid fa-user iconL"></i></a></li>
               
@@ -56,7 +62,7 @@
             <h1>Registrate</h1>
             <br>
             <div class="registro2">
-                <form action="../index.html" onsubmit="return validarDatos()">
+                <form action=""  onsubmit="return validarDatos(event)">
                <div> 
                 <label for="mail">Ingresa un mail:</label>
                 <input class="input" type="email" name="mail" id="mail" required>
@@ -86,7 +92,8 @@
              </select></div>
             
             </div>
-               <button class="button-cam"><a href="../index.html" id="boton-guardar">Guardar</a></button>
+            <div id="campos"></div>
+               <button class="button-cam" type="submit"><a href="" id="boton-guardar">Guardar</a></button>
             </form>
              
             <div style="flex-direction: row; display: flex;">

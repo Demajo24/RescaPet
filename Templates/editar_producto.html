@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../static/css/resca.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/tabla_productos.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <nav class="nav">
+        <a class ="text-nav" href="index.html">RescaPet</a>
+      
+    </nav>
+    <main>
+        <section>
+
+            <div class="container-form">
+
+                <div class="card">
+                <form>
+                  
+                    <div>
+                        <label for="id">ID</label>
+                        <input class="inputB" type="number" name="id" id="id" disabled>
+                    </div>
+            
+                    <div>
+                        <label for="nombre">Nombre</label>
+                        <input  class="inputB" type="text" name="nombre" id="nombre">
+                    </div>
+
+                    <div class="entrada">
+                        <label for="email">Email:</label>
+                        <input class="inputB" type="text" name="email" id="email">
+                    </div>
+
+                    <div class="entrada">
+                        <label for="informacion">informacion:</label>
+                        <input class="inputB" type="text" name="informacion" id="informacion">
+                    </div>
+
+                    <!-- <div class="entrada">
+                        <label for="imagen">Imagen:</label>
+                        <input type="text" name="imagen" id="imagen">
+                    </div> -->
+
+                    
+                    <button class="button-cam" type="button" onclick="modificar()">Modificar</button>
+                   
+                </form>
+          
+            </div>
+              </div>
+
+        </section>
+    </main>
+
+    
+    <footer></footer>
+
+    <script src="../js/editar_producto.js"></script>
+    <script src="../js/header.js"></script>
+    <script src="../js/datos_editar.js"></script>
+</body>
+</html>

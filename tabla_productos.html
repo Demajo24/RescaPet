@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/tabla_productos.css">
+    <link href="static/css/resca.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+ 
+    <nav class="nav">
+        <a class ="text-nav" href="index.html">RescaPet</a>
+      
+    </nav>
+
+    <main>
+
+        <section class="container">
+            <div id="app">
+
+                <!-- Botón Nuevo -->
+                <!-- <a class="nuevo" href="Templates/ingresar_producto.html">Nuevo Ingreso </a> -->
+
+                <section v-if="error">Lo sentimos se produjo un error</section>
+                <section v-else>
+                    <section v-if="cargando">
+                        <p>Cargando .....</p>
+
+                    </section>
+
+                    <section v-else>
+                        
+                        <div class="table-container">
+                            <table class="tabla">
+                              
+                                <thead>
+                                    <tr>
+                                        <th>ID</th>
+                                        <th>Nombre</th>
+                                        <th>Direccion</th>
+                                        <th>Informacion</th>
+                                        <th>Imagen</th>
+                                        <th>Acciones</th>
+                                        <th>Acciones</th>
+                                       
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                   
+                                    <tr v-for="perdido in perdidos">
+                                        <td>{{perdido.id}}</td>
+                                        <td>{{perdido.nombre}}</td>
+                                        <td>{{perdido.email}}</td>
+                                        <td>{{perdido.informacion}}</td>
+                                        <td></td>
+                                        <!-- <td>
+                                            <img :src="perdido.imagen" alt="">
+                                        </td> -->
+                                        <td>
+                                            <button type="button" class="boton2"  v-on:click="eliminar(perdido.id)">Eliminar</button>
+                                        </td>
+                                       <td>
+                                            <a class="boton" :href="'Templates/editar_producto.html?id='+perdido.id +'&nombre='+perdido.nombre +'&email='+perdido.email +'&informacion='+perdido.informacion">Editar</a>
+                                        </td> 
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </section>
+                </section>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer></footer>
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="js/tabla_productos.js"></script>
+     <script src="js/header.js"></script> 
+</body>
+</html>

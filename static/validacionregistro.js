@@ -1,4 +1,5 @@
-function validarDatos(){
+function validarDatos(event) {
+    event.preventDefault(); // Evitar que el formulario se envíe automáticamente
 
     let mail = document.getElementById("mail").value.trim()                   
     let nuevousuario = document.getElementById("nuevo-usuario").value.trim()  
@@ -13,7 +14,11 @@ function validarDatos(){
     }    
 
    
-    
+    if (!/^\S+@\S+\.\S+$/.test(mail)) {
+        error.textContent = "Por favor ingrese un email válido.";
+        error.style.color = "blue";
+        return false;
+    } 
     if(!/^[a-zA-Z]+$/.test(nuevousuario)){
         error.textContent = "Por favor complete un nombre válido."
         error.style.color = "blue"
@@ -34,9 +39,12 @@ function validarDatos(){
         return false
     }
     
-    // Si todas las validaciones son exitosas, informar
-    alert("Datos validados.")
-    return true
+     
+ // Si todas las validaciones pasan, mostramos un alert
+ alert("¡Todos los datos son enviados correctamente!");
+ // Aquí puedes agregar cualquier otra acción que necesites después de enviar los datos
+
+ event.target.submit();
   
 }
 
