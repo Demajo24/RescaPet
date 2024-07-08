@@ -13,7 +13,10 @@
 <body>
  
     <nav class="nav">
-        <a class ="text-nav" href="index.html"><i class="fa-solid fa-arrow-left iconL"></i>RescaPet</a>
+        <a class ="text-nav" href="index.html">
+            <i class="fa-solid fa-arrow-left iconL"></i>
+            RescaPet datos de perdidos
+        </a>
       
     </nav>
 
@@ -46,13 +49,13 @@
                               
                                 <thead>
                                     <tr>
-                                        <th>ID</th>
+                                        <th style="border-top-left-radius: 10px;">ID</th>
                                         <th>Nombre</th>
                                         <th>Direccion</th>
                                         <th>Informacion</th>
                                         <th>Imagen</th>
                                         <th>Acciones</th>
-                                        <th>Acciones</th>
+                                        <th style="border-top-right-radius: 10px;">Acciones</th>
                                        
                                     </tr>
                                 </thead>
@@ -67,11 +70,11 @@
                                         <!-- <td>
                                             <img :src="perdido.imagen" alt="">
                                         </td> -->
-                                        <td>
-                                            <button type="button" class="boton2"  v-on:click="eliminar(perdido.id)">Eliminar</button>
+                                        <td style="text-align: center;">
+                                            <button type="button" class="boton2"  v-on:click="eliminar(perdido.id)"><i class="fa-solid fa-trash iconmd"></i></button>
                                         </td>
-                                       <td>
-                                            <a class="boton" :href="'Templates/editar_perdidos.html?id='+perdido.id +'&nombre='+perdido.nombre +'&email='+perdido.email +'&informacion='+perdido.informacion">Editar</a>
+                                        <td style="text-align: center;">
+                                            <a class="boton" :href="'Templates/editar_perdidos.html?id='+perdido.id +'&nombre='+perdido.nombre +'&email='+perdido.email +'&informacion='+perdido.informacion"><i class="fa-solid fa-file-pen iconmd"></i></a>
                                         </td> 
                                     </tr>
                                 </tbody>

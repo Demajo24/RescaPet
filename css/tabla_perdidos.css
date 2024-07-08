@@ -33,8 +33,9 @@ html{
 }
 
 table {
-    background-color:#2C6700;
+    background-color:blueviolet;
     border-collapse: collapse;
+    border-radius: 10px;
      width: 75%;
     margin: 2vw auto;
     font-family:"Dosis","Roboto" sans-serif;
@@ -57,7 +58,7 @@ th, td {
 th {
     background-color: #f2f2f2;
     font-weight: bold;
-    color: #001F3F;
+    color:blueviolet;
     font-family:"Dosis","Roboto" sans-serif;
 }
 @media only screen and (max-width:930px){
@@ -132,23 +133,21 @@ a:active{
 
 
  }
-.iconL{
-    padding-right: 15px;
-}
+
 .boton{
     
     color: #f2f2f2;
     margin-right: 2vh;
-    background-color: #4CAF50; /* Color de fondo */
-    color: white; /* Color del texto */
-    padding: 0.5vw 3vh; /* Relleno interno */
-    border: none; /* Quita el borde */
-    border-radius: 2vw; /* Borde redondeado */
-    text-align: center; /* Alineación del texto */
-    text-decoration: none; /* Quita el subrayado predeterminado */
-    display: inline-block; /* Mostrar como bloque en línea */
-    font-size: 1vw; /* Tamaño de fuente */
-    cursor: pointer; /* Cambia el cursor al pasar el ratón */
+    background-color: #4CAF50; 
+    color: white;
+    padding: 3px 4px 3px 3px !important; 
+    border: none; 
+    border-radius: 2vw; 
+    text-align: center; 
+    text-decoration: none; 
+    display: inline-block; 
+    font-size: 1vw; 
+    cursor: pointer; 
     font-family: "Dosis","Roboto" sans-serif;
 }
 .boton:hover{
@@ -157,19 +156,21 @@ a:active{
 .boton2{
     
     color: #f2f2f2;
-    margin-right: 2vh;
-    background-color:red; /* Color de fondo */
-    color: white; /* Color del texto */
-    padding: 0.5vw 3vh; /* Relleno interno */
-    border: none; /* Quita el borde */
-    border-radius: 2vw; /* Borde redondeado */
-    text-align: center; /* Alineación del texto */
-    text-decoration: none; /* Quita el subrayado predeterminado */
-    display: inline-block; /* Mostrar como bloque en línea */
-    font-size: 1vw; /* Tamaño de fuente */
-    cursor: pointer; /* Cambia el cursor al pasar el ratón */
+   
+    background-color:red; 
+    color: white; 
+    padding: 3px 4px 3px 3px !important; 
+    margin-right: 0px !important;
+    border: none; 
+    border-radius: 2vw; 
+    text-align: center; 
+    text-decoration: none; 
+    display: inline-block;
+    font-size: 1vw; 
+    cursor: pointer; 
     font-family: "Dosis","Roboto" sans-serif;
 }
+
 .boton2:hover{
 
     background-color: #ff6600;
